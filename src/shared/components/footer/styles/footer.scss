@@ -1,0 +1,9 @@
+@import "assets/styles/helpers";
+
+footer {
+    background: rgba(var(--c-neutral-900) , $alpha);    
+    @import "./footer-services";
+    @import "./footer-about";
+    @import "./footer-copyright";
+    @import "./footer-links";
+}

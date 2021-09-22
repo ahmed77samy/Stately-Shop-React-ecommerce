@@ -1,0 +1,21 @@
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.quickview__modal__content{
+    .modal__header{
+        padding: 10px 15px;
+        display: flex;
+        justify-content: flex-end;
+        .icon {
+            cursor: pointer;
+            font-size: 1.7rem;
+        }
+    }
+    .modal__body {
+        p {
+            @include lineclamp(3);
+        }
+    }
+}

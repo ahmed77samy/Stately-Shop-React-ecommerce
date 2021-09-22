@@ -1,0 +1,15 @@
+@import "assets/styles/helpers";
+
+.product__modal {
+    .modal-dialog {
+        .modal-content {
+            height: 100%;
+            /*========== modal-body ==========*/
+            .modal-body {
+                padding: 0;
+                @import "./product-modal-item";
+            }
+            /*========== modal-body ==========*/
+        }
+    }
+}

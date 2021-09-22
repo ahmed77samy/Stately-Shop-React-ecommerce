@@ -1,0 +1,23 @@
+@import "assets/styles/helpers";
+
+section.product {
+    .sec__content {
+        .my__card {
+            .product__item {
+                @import "./product-item";
+            }
+            &:hover {
+                box-shadow: var(--shadow-m);
+                .product__item {
+                    .thumbnail__buttons {
+                        a {
+                            opacity: 1;
+                            pointer-events: all;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

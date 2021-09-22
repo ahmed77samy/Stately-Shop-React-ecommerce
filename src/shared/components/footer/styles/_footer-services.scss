@@ -1,0 +1,11 @@
+.footer__service {
+    .service__item {
+        text-align: center;
+        .icon {
+            font-size: 2rem;
+            margin-right: 10px;
+            color: rgba(var(--c-primary-500) , $alpha);
+            margin-bottom: 10px;
+        }
+    }
+}

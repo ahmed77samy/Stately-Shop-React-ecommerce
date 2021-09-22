@@ -1,0 +1,68 @@
+.header__nav {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    & > ul {
+        display: flex;
+        column-gap: 30px;
+        /*========== li ==========*/
+        li {
+            height: $header-height;
+            line-height: $header-height;
+            a {
+                text-transform: uppercase;
+                font-weight: 700;
+                transition: .3s;
+                display: flex;
+                align-items: center;
+                column-gap: 2px;
+                &:hover,&.active {
+                    color: rgba(var(--c-primary-500) , $alpha);
+                }
+            }
+            /*========== nav__drop ==========*/
+            &.nav__drop {
+                position: relative;
+                ul {
+                    position: absolute;
+                    left: 50%;
+                    top: 100%;
+                    transform: translateX(-50%);
+                    background: rgba(var(--c-white) , $alpha);
+                    box-shadow: var(--shadow-m);
+                    display: none;
+                    padding: 10px 40px;
+                    z-index: 9999;
+                    li {
+                        height: auto;
+                        line-height: 1.5;
+                        width: max-content;
+                        padding: 10px 0;
+                        a {
+                            padding: 0;
+                        }
+                    }
+                }
+                &:hover {
+                    ul {
+                        display: block;
+                    }
+                }
+            }
+            /*========== nav__drop ==========*/
+            &.two--col {
+                ul {
+                    columns: 2 auto;
+                    column-gap: 30px;
+                }
+            }
+            &.three--col {
+                ul {
+                    columns: 3 auto;
+                    column-gap: 30px;
+                }
+            }
+        }
+        /*========== li ==========*/
+    }
+}

@@ -1,0 +1,20 @@
+@import "assets/styles/helpers";
+
+section.banner__sub__page {
+    .wrapper__img {
+        @include overlay(var(--c-neutral-800) , 0.7)
+    }
+    .sec__content {
+        h2 {
+            font-size: 3.2rem;
+            font-weight: 600;
+        }
+        a {
+            color: rgba(var(--c-neutral-300) , $alpha);
+            transition: .3s;
+            &:hover {
+                color: rgba(var(--white) , $alpha);
+            }
+        }
+    }
+}

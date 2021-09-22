@@ -1,0 +1,22 @@
+.result__item {
+    display: flex;
+    align-items: center;
+    figure {
+        width: 90px;
+        height: 90px;
+        flex-shrink: 0;
+        margin-right: 15px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .item__content {
+        h6 {
+            font-size: 0.8rem;
+            @include lineclamp(1);
+            font-weight: bold;
+        }
+    }
+}

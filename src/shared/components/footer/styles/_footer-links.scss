@@ -1,0 +1,28 @@
+.footer__links {
+    .footer__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .item__header {
+            h4 {
+                font-weight: 600;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 3px;
+            li {
+                color: rgba(var(--c-neutral-400) , $alpha);
+                font-size: 0.8rem;
+                a {
+                    text-transform: uppercase;
+                    transition: .3s;
+                    &:hover {
+                        color: rgba(var(--c-white) , $alpha);
+                    }
+                }
+            }
+        }
+    }
+}

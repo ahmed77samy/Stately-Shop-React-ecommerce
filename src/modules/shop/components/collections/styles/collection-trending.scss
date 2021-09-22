@@ -1,0 +1,9 @@
+@import "assets/styles/helpers";
+
+$padding: 10px;
+
+section.collection__trending {
+    .sec__content {
+        @import "./collection-item";
+    }
+}

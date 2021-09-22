@@ -1,0 +1,50 @@
+@import "assets/styles/helpers";
+
+header {
+    z-index: 9999;
+    background: rgba(var(--c-white) , $alpha);
+    &.live__stuck {
+        position: fixed;
+        top: -$header-height;
+        left: 0;
+        width: 100%;
+        box-shadow: var(--shadow-m);
+        animation: sliding 0.5s forwards
+    }
+    /*========== header logo ==========*/
+    .logo {
+        user-select: none;
+    }
+    /*========== header logo ==========*/
+    /*========== header__navbar ==========*/
+    .header__navbar {
+        height: $header-height;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .icon {
+            cursor: pointer;
+            transition: .3s;
+            font-size: 1.5rem;
+        }
+    }
+    /*========== header__navbar ==========*/
+    /*========== header__user ==========*/
+    .header__user{
+        display: flex;
+        column-gap: 15px;
+        .wrapper__badge {
+            position: relative;
+            .icon {
+                font-size: 1.4rem;
+                cursor: pointer;
+                transition: .3s;
+                &:hover {
+                    color: rgba(var(--c-primary-500) , $alpha);
+                }
+            }
+        }
+    }
+    /*========== header__user ==========*/
+    @import "./header-nav";
+}

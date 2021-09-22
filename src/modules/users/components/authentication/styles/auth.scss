@@ -1,0 +1,7 @@
+@import "assets/styles/helpers";
+
+.form__auth {
+    .my__card {
+        @import "./form";
+    }
+}

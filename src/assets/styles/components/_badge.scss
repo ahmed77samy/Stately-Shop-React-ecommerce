@@ -1,0 +1,45 @@
+.badge {
+    padding: .35em .5em;
+    &.badge--right {
+        border-radius: 0 0 0 4px;
+    }
+    &.badge--left {
+        border-radius: 0 4px 0 0;
+    }
+}
+
+.badge__raduis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 3;
+    background: rgba(var(--c-white) , $alpha);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: rgba(var(--c-neutral-500), $alpha) !important;
+    & > * {
+        pointer-events: none;
+    }
+    &.checked {
+        background: rgba(var(--c-primary-400) , $alpha);
+        color: rgba(var(--c-white) , $alpha) !important;
+    }
+}
+
+
+.badge__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50% , -50%);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+}

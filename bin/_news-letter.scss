@@ -1,0 +1,14 @@
+.news__letter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    form {
+        flex-grow: 1;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        input {
+            width: 100%;
+        }
+    }
+}

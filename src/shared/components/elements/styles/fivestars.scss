@@ -1,0 +1,13 @@
+@import "assets/styles/helpers";
+
+.fivestars {
+    .icon {
+        font-size: 1rem;
+        &.fill {
+            color: rgba(var(--gold) , $alpha);
+        }
+        &.empty {
+            color: rgba(var(--c-neutral-300) , $alpha);
+        }
+    }
+}

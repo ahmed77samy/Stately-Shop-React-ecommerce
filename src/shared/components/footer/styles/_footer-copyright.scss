@@ -1,0 +1,8 @@
+.footer__copyright{
+    a {
+        transition: .3s;
+        &:hover {
+            color: rgba(var(--c-white) , $alpha);
+        }
+    }
+}

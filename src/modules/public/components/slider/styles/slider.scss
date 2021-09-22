@@ -1,0 +1,77 @@
+@import "assets/styles/helpers";
+
+$swiper-delay: 0.8;
+
+section.slider {
+    position: relative;
+    @include skewed(3);
+    &::after {
+        background: rgba(var(--c-neutral-900) , $alpha);
+    }
+    /*========== slider__item ==========*/
+    .slider__item {
+        @include lg {
+            height: calc(100vh - #{$header-height});
+        }
+        padding-bottom: 120px;
+        /*========== item__data ==========*/
+        .item__data {
+            position: relative;
+            left: -50px;
+            opacity: 0;
+            transition: .5s #{$swiper-delay}s;
+            h2 {
+                @include lineclamp(2);
+                font-size: 1.3rem;
+                @include lg {
+                    font-size: 2rem;
+                }
+            }
+            p {
+                display: none;
+                @include lg {
+                    @include lineclamp(2);
+                }
+            }
+            a[role = "button"] {
+                margin: auto;
+                @include lg {
+                    margin: 0;
+                }
+            }
+        }
+        /*========== item__data ==========*/
+        /*========== img ==========*/
+        img {
+            position: relative;
+            max-width: 100%;
+            left: 50px;
+            opacity: 0;
+            transition: .5s #{$swiper-delay / 2}s;
+            width: 200px;
+            @include lg {
+                width: auto;
+            }
+        }
+        /*========== img ==========*/
+        &.item--active {
+            .item__data,img {
+                left: 0;
+                opacity: 1;
+            }
+        }
+    }
+    /*========== slider__item ==========*/
+
+    /*========== slider__control ==========*/
+    .slider__control {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        column-gap: 25px;
+        justify-content: center;
+    }
+    /*========== slider__control ==========*/
+}

@@ -1,0 +1,227 @@
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,label {
+    font-family: $font-header;
+}
+p,span {
+    color: rgba(var(--c-neutral-400), $alpha);
+    font-size: 1rem;
+}
+.dark--mode {
+    color: rgba(var(--c-white) , $alpha);
+    p,span {
+        color: rgba(var(--c-neutral-300),  $alpha);
+    }
+}
+.font--size--small {
+    font-size: 0.75rem !important;
+}
+.font--header {
+    font-family: $font-header;
+}
+.font--text {
+    font-family: $font-text;
+}
+.bg--primary--50 {
+    background-color: rgba( var(--c-primary-50) , $alpha) !important;
+}
+.bg--primary--100 {
+    background-color: rgba( var(--c-primary-100) , $alpha) !important;
+}
+.bg--primary--200 {
+    background-color: rgba( var(--c-primary-200) , $alpha) !important;
+}
+.bg--primary--300 {
+    background-color: rgba( var(--c-primary-300) , $alpha) !important;
+}
+.bg--primary--400 {
+    background-color: rgba( var(--c-primary-400) , $alpha) !important;
+}
+.bg--primary--500 {
+    background-color: rgba( var(--c-primary-500) , $alpha) !important;
+}
+.bg--primary--600 {
+    background-color: rgba( var(--c-primary-600) , $alpha) !important;
+}
+.bg--primary--700 {
+    background-color: rgba( var(--c-primary-700) , $alpha) !important;
+}
+.bg--primary--800 {
+    background-color: rgba( var(--c-primary-800) , $alpha) !important;
+}
+.bg--primary--900 {
+    background-color: rgba( var(--c-primary-900) , $alpha) !important;
+}
+.bg--secondary--50 {
+    background-color: rgba( var(--c-secondary-50) , $alpha) !important;
+}
+.bg--secondary--100 {
+    background-color: rgba( var(--c-secondary-100) , $alpha) !important;
+}
+.bg--secondary--200 {
+    background-color: rgba( var(--c-secondary-200) , $alpha) !important;
+}
+.bg--secondary--300 {
+    background-color: rgba( var(--c-secondary-300) , $alpha) !important;
+}
+.bg--secondary--400 {
+    background-color: rgba( var(--c-secondary-400) , $alpha) !important;
+}
+.bg--secondary--500 {
+    background-color: rgba( var(--c-secondary-500) , $alpha) !important;
+}
+.bg--secondary--600 {
+    background-color: rgba( var(--c-secondary-600) , $alpha) !important;
+}
+.bg--secondary--700 {
+    background-color: rgba( var(--c-secondary-700) , $alpha) !important;
+}
+.bg--secondary--800 {
+    background-color: rgba( var(--c-secondary-800) , $alpha) !important;
+}
+.bg--secondary--900 {
+    background-color: rgba( var(--c-secondary-900) , $alpha) !important;
+}
+.bg--neutral--50 {
+    background-color: rgba( var(--c-neutral-50) , $alpha) !important;
+}
+.bg--neutral--100 {
+    background-color: rgba( var(--c-neutral-100) , $alpha) !important;
+}
+.bg--neutral--200 {
+    background-color: rgba( var(--c-neutral-200) , $alpha) !important;
+}
+.bg--neutral--300 {
+    background-color: rgba( var(--c-neutral-300) , $alpha) !important;
+}
+.bg--neutral--400 {
+    background-color: rgba( var(--c-neutral-400) , $alpha) !important;
+}
+.bg--neutral--500 {
+    background-color: rgba( var(--c-neutral-500) , $alpha) !important;
+}
+.bg--neutral--600 {
+    background-color: rgba( var(--c-neutral-600) , $alpha) !important;
+}
+.bg--neutral--700 {
+    background-color: rgba( var(--c-neutral-700) , $alpha) !important;
+}
+.bg--neutral--800 {
+    background-color: rgba( var(--c-neutral-800) , $alpha) !important;
+}
+.bg--neutral--900 {
+    background-color: rgba( var(--c-neutral-900) , $alpha) !important;
+}
+.bg--white {
+    background-color: rgba(var(--c-white) , $alpha) !important
+}
+.bg--black {
+    background-color: rgba(var(--c-black) , $alpha) !important
+}
+.text--primary--50 {
+    color: rgba( var(--c-primary-50) , $alpha) !important;
+}
+.text--primary--100 {
+    color: rgba( var(--c-primary-100) , $alpha) !important;
+}
+.text--primary--200 {
+    color: rgba( var(--c-primary-200) , $alpha) !important;
+}
+.text--primary--300 {
+    color: rgba( var(--c-primary-300) , $alpha) !important;
+}
+.text--primary--400 {
+    color: rgba( var(--c-primary-400) , $alpha) !important;
+}
+.text--primary--500 {
+    color: rgba( var(--c-primary-500) , $alpha) !important;
+}
+.text--primary--600 {
+    color: rgba( var(--c-primary-600) , $alpha) !important;
+}
+.text--primary--700 {
+    color: rgba( var(--c-primary-700) , $alpha) !important;
+}
+.text--primary--800 {
+    color: rgba( var(--c-primary-800) , $alpha) !important;
+}
+.text--primary--900 {
+    color: rgba( var(--c-primary-900) , $alpha) !important;
+}
+.text--secondary--50 {
+    color: rgba( var(--c-secondary-50) , $alpha) !important;
+}
+.text--secondary--100 {
+    color: rgba( var(--c-secondary-100) , $alpha) !important;
+}
+.text--secondary--200 {
+    color: rgba( var(--c-secondary-200) , $alpha) !important;
+}
+.text--secondary--300 {
+    color: rgba( var(--c-secondary-300) , $alpha) !important;
+}
+.text--secondary--400 {
+    color: rgba( var(--c-secondary-400) , $alpha) !important;
+}
+.text--secondary--500 {
+    color: rgba( var(--c-secondary-500) , $alpha) !important;
+}
+.text--secondary--600 {
+    color: rgba( var(--c-secondary-600) , $alpha) !important;
+}
+.text--secondary--700 {
+    color: rgba( var(--c-secondary-700) , $alpha) !important;
+}
+.text--secondary--800 {
+    color: rgba( var(--c-secondary-800) , $alpha) !important;
+}
+.text--secondary--900 {
+    color: rgba( var(--c-secondary-900) , $alpha) !important;
+}
+.text--neutral--50 {
+    color: rgba( var(--c-neutral-50) , $alpha) !important;
+}
+.text--neutral--100 {
+    color: rgba( var(--c-neutral-100) , $alpha) !important;
+}
+.text--neutral--200 {
+    color: rgba( var(--c-neutral-200) , $alpha) !important;
+}
+.text--neutral--300 {
+    color: rgba( var(--c-neutral-300) , $alpha) !important;
+}
+.text--neutral--400 {
+    color: rgba( var(--c-neutral-400) , $alpha) !important;
+}
+.text--neutral--500 {
+    color: rgba( var(--c-neutral-500) , $alpha) !important;
+}
+.text--neutral--600 {
+    color: rgba( var(--c-neutral-600) , $alpha) !important;
+}
+.text--neutral--700 {
+    color: rgba( var(--c-neutral-700) , $alpha) !important;
+}
+.text--neutral--800 {
+    color: rgba( var(--c-neutral-800) , $alpha) !important;
+}
+.text--neutral--900 {
+    color: rgba( var(--c-neutral-900) , $alpha) !important;
+}
+.text--white {
+    color: rgba(var(--c-white) , $alpha) !important
+}
+.text--black {
+    color: rgba(var(--c-black) , $alpha) !important
+}
+.t--delay--1 {
+    transition-delay: 0.1s !important;
+}
+.disabled {
+    filter: grayscale(1) !important;
+    cursor: not-allowed !important;
+}
+
+.non--click {
+    pointer-events: none !important
+}
+
+

@@ -1,0 +1,22 @@
+@import "assets/styles/helpers";
+
+.not__found__layout {
+    min-height: calc(100vh - #{$header-height});
+    display: flex;
+    .sec__content {
+        h2 {
+            font-weight: bold;
+            margin-bottom: 30px;
+            @include sm {
+                font-size: 4rem;
+            }
+        }
+        .wrapper__btn {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            column-gap: 10px;
+            margin-top: 30px;
+        }
+    }
+}
