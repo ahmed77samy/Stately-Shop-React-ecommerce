@@ -1,0 +1,54 @@
+.visible__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    div {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+    /*========== filter ==========*/
+    .filter {
+        button {
+            width: auto;
+            padding: 0 20px;
+            column-gap: 10px;
+            text-transform: uppercase;
+            & > * {
+                pointer-events: none;
+            }
+        }
+    }
+    /*========== filter ==========*/
+    /*========== sort ==========*/
+    .sort {
+        flex-grow: 1;
+        .box {
+            position: relative;
+            select {
+                border-radius: 0;
+                border: 1px solid rgba(var(--c-neutral-300), $alpha);
+                padding: 10px 30px 10px 15px;
+                outline: none;
+                text-transform: capitalize;
+                appearance: none;
+                cursor: pointer;
+            }
+            &::after {
+                content: "\f107";
+                font-family: "Font Awesome 5 Pro";
+                font-weight: 400;
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none
+            }
+        }
+    }
+    /*========== sort ==========*/
+}

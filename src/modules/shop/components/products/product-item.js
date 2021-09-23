@@ -50,7 +50,7 @@ function ProductItem (props) {
                             {name}
                         </Link>
                     </h4>
-                    <FiveStars stars={rating} />
+                    <FiveStars stars={rating} reviews={12} />
                     <Salary sale={sale} salary={salary} />
                 </ItemContent>
                 {/*========== item__content ==========*/}

@@ -16,15 +16,19 @@ export const CartIcon = (props) => <i {...props} className={`fal fa-baby-carriag
 export const PhoneIcon = (props) => <i {...props} className={`fal fa-phone-alt ${props.className}`}></i>;
 export const LocationIcon = (props) => <i {...props} className={`fal fa-map-marker-alt ${props.className}`}></i>;
 export const EmailIcon = (props) => <i {...props} className={`fal fa-envelope ${props.className}`}></i>;
-export const StarIcon = (props) => <i {...props} className={`far fa-star ${props.className}`}></i>;
+export const StarIcon = (props) => <i {...props} className={`fas fa-star ${props.className}`}></i>;
 export const FacebookIcon = (props) => <i {...props} className={`fab fa-facebook-f ${props.className}`}></i>;
 export const TwitterIcon = (props) => <i {...props} className={`fab fa-twitter ${props.className}`}></i>;
 export const GoogleIcon = (props) => <i {...props} className={`fab fa-google ${props.className}`}></i>;
 export const HomeIcon = (props) => <i {...props} className={`fal fa-home-lg-alt ${props.className}`}></i>;
-
-
 export const RepeatIcon = (props) => <i {...props} className={`fal fa-sync-alt ${props.className}`}></i>;
 export const PaymentIcon = (props) => <i {...props} className={`fal fa-money-check-alt ${props.className}`}></i>;
 export const HandHelpIcon = (props) => <i {...props} className={`fal fa-hands-helping ${props.className}`}></i>;
 export const TruckIcon = (props) => <i {...props} className={`fal fa-truck ${props.className}`}></i>;
+export const ListIcon = (props) => <i {...props} className={`fas fa-bars ${props.className}`}></i>;
+export const GridIcon = (props) => <i {...props} className={`far fa-border-all ${props.className}`}></i>;
+export const FilterHeroIcon = (props) => <i {...props} className={`far fa-sliders-h ${props.className}`}></i>;
 
+
+// export const PlusIcon = (props) => <i {...props} className={`fal fa-plus ${props.className}`}></i>;
+// export const MinusIcon = (props) => <i {...props} className={`fal fa-minus ${props.className}`}></i>;

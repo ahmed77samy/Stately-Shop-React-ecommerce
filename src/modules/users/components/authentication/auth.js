@@ -28,7 +28,7 @@ function Auth () {
         <section className="com--pd form__auth">
             <Container>
                 <Card className="py-5 px-3">
-                    <SecHeader title="my account" description="Welcome to shopify Community" className="header--center" />
+                    <SecHeader title="my account" description="Welcome to stately Community" className="header--center" />
                     <div className="sec__content">
                         {
                             view === 'login' ?

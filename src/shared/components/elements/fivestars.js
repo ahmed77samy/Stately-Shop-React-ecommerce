@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import "./styles/fivestars.scss"
 
 function FiveStars (props) {
-    const {stars} = props;
+    const {stars, reviews} = props;
     let fiveStars = Array.from(Array(5));
 
     // map for fiveStars to create stars fill and stroke
@@ -19,13 +19,14 @@ function FiveStars (props) {
      */
     return (
         <div className="fivestars">
-            {starList}
+            {starList}&nbsp;&nbsp;<span className="font--size--small">(&nbsp;&nbsp;{reviews} Reviews&nbsp;&nbsp;)</span>
         </div>
     )
 }
 
 FiveStars.propTypes = {
-    stars: PropTypes.number.isRequired
+    stars: PropTypes.number.isRequired,
+    reviews: PropTypes.number.isRequired
 }
 
 export default FiveStars

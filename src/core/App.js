@@ -3,7 +3,7 @@ import reportWebVitals from './reportWebVitals';
 import serviceProvider from "./service-provider"
 import RouteService from "./route-service"
 import publicService from "modules/public/service"
-// import shopService from "modules/shop/service"
+import shopService from "modules/shop/service"
 import userRoutes from "modules/users/service"
 import ConfigService from './config-service';
 
@@ -16,7 +16,7 @@ class App {
 
     serviceList = [
         publicService,
-        // shopService,
+        shopService,
         userRoutes,
     ]
 

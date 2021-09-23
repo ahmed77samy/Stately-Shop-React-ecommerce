@@ -3,7 +3,6 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,label {
 }
 p,span {
     color: rgba(var(--c-neutral-400), $alpha);
-    font-size: 1rem;
 }
 .dark--mode {
     color: rgba(var(--c-white) , $alpha);

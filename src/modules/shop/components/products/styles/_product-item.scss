@@ -45,11 +45,11 @@ figure {
     padding: 25px 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
-    text-align: center;
+    align-items: flex-start;
+    row-gap: 5px;
+    text-align: left;
     h4 {
-        @include lineclamp(2);
+        @include lineclamp(1);
         font-weight: bold;
         margin: 0;
     }

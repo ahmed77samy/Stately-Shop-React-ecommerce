@@ -2,9 +2,9 @@
 
 .fivestars {
     .icon {
-        font-size: 1rem;
+        font-size: 0.88rem;
         &.fill {
-            color: rgba(var(--gold) , $alpha);
+            color: rgb(253, 188, 0);
         }
         &.empty {
             color: rgba(var(--c-neutral-300) , $alpha);

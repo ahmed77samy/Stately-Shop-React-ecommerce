@@ -1,0 +1,11 @@
+.banner {
+    position: relative;
+    img {
+        object-fit: cover;
+    }
+    .item__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

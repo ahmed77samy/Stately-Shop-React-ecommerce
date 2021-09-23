@@ -1,0 +1,48 @@
+@import "assets/styles/helpers";
+
+.filter__item {
+    /*========== my__card ==========*/
+    .my__card {
+        padding: 10px 20px;
+    }
+    /*========== my__card ==========*/
+    /*========== item__header ==========*/
+    .item__header {
+        cursor: pointer;
+        padding: 0;
+        user-select: none;
+        transition: .3s;
+        padding: 5px 0;
+        &.isopen {
+            padding: 10px 0;
+        }
+        h5 {
+            font-weight: bold;
+        }
+        & > .icon {
+            font-size: 1.5rem;
+        }
+    }
+    /*========== item__header ==========*/
+    /*========== item__content ==========*/
+    .item__content {
+        display: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 0;
+        &.isopen {
+            display: inherit;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        li {
+            text-transform: capitalize;
+            transition: .3s;
+            color: rgba(var(--c-neutral-400), $alpha);
+        }
+    }
+    /*========== item__content ==========*/
+}

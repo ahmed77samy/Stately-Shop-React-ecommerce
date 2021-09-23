@@ -1,0 +1,17 @@
+@import "assets/styles/helpers";
+
+.bread__crumb{
+    background: rgba(var(--c-neutral-700), $alpha);
+    ol {
+        background: transparent;
+        margin: 0;
+        padding: 20px 0;
+        li {
+            color: rgba(var(--c-white), 0.7);
+            transition: .3s;
+            &:hover,&.active {
+                color: rgba(var(--c-white), $alpha);
+            }
+        }
+    }
+}

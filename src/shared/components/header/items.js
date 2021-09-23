@@ -1,4 +1,3 @@
-import { collection_items } from "items"
 
 const HeaderItems = [
     {
@@ -24,42 +23,13 @@ const HeaderItems = [
         ]
     },
     {
-        route: "/home",
-        content: "home",
-    },
-    {
-        route: "/collections-grid",
-        content: "collections",
+        route: "/shop",
+        content: "shop",
         items: [
             {
-                route: "/collections-grid",
-                content: "grid"
-            },
-            {
-                route: "/",
-                content: "left sidebar"
-            },
-            {
-                route: "/",
-                content: "right sidebar"
-            },
-            {
-                route: "/",
-                content: "no sidebar"
-            },
-        ]
-    },
-    {
-        route: "/products",
-        content: "products",
-        classes: "three--col",
-        items: [
-            
-            {
-                route: "/products",
-                content: "all"
-            },
-            ...collection_items
+                route: "/shop/banner-sidebar",
+                content: "banner with sidebar"
+            }
         ]
     },
     {

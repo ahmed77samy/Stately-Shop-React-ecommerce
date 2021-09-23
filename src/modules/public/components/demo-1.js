@@ -8,17 +8,8 @@ import Product from "modules/shop/components/products/product"
 // import FeaturedProduct from "modules/shop/components/products/featured-product"
 
 import Layout from "shared/components/layout/layout"
-import { useEffect } from "react"
-import axios from "axios"
 
 function Demo () {
-
-    useEffect(() => {
-        axios.post("https://unhealthier-dusts.000webhostapp.com/api/auth/me",new FormData())
-        .then(data => console.log(data))
-        .catch(err => console.log(err.response))
-    },[])
-
     return (
         <Layout>
             <div id="demo__page">
