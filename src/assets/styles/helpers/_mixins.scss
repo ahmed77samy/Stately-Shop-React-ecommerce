@@ -55,10 +55,10 @@
 }
 
 @mixin scrollbar ($width: 10px , $track: var(--c-neutral-100) , $thumb: var(--c-neutral-300) , $hover: var(--c-neutral-400)) {
+	padding-right: 4px;
 	&::-webkit-scrollbar {
 		width: $width;
 	}
-
 	&::-webkit-scrollbar-track {
 		background: rgba( $track , $alpha);
 	}

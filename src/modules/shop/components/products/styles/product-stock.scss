@@ -1,0 +1,13 @@
+span.stock {
+    text-transform: capitalize;
+    .icon {
+        font-size: 1em;
+        cursor: auto;
+    }
+    span.in--stock {
+        color: var(--green);
+    }
+    span.out--stock {
+        color: var(--red);
+    }
+}

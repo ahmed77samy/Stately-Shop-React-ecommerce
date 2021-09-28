@@ -4,7 +4,8 @@ import BannerSidebarLayout from "./banner-sidebar-layout/banner-sidebar-layout"
 import { CartIcon, HomeIcon } from "shared/components/elements/icons"
 
 function BannerSidebar() {
-
+    
+    // items BreadCrumb
     const elBreadCrumb = [
         {
             content: "home",
@@ -23,6 +24,9 @@ function BannerSidebar() {
         },
     ]
 
+    /**
+     * {@inheritdoc}
+     */
     return(
         <Layout>
             <div id="shop__page">

@@ -1,0 +1,69 @@
+.reviews {
+    /*========== review__item ==========*/
+    .review__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        @include sm {
+            flex-direction: row;
+        }
+        figure {
+            width: 70px;
+            height: 70px;
+            flex-shrink: 0;
+            margin-right: 15px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .item__content {
+            .item__header {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-end;
+                h5 {
+                    font-weight: 600;
+                    transition: .3s;
+                    &:hover {
+                        color: rgba(var(--c-primary-700), $alpha);
+                    }
+                }
+            }
+        }
+    }
+    /*========== review__item ==========*/
+    /*========== show__reviews ==========*/
+    a.show__reviews {
+        font-weight: 600;
+        transition: .3s;
+        &:hover {
+            color: rgba(var(--c-primary-700), $alpha);
+        }
+    }
+    /*========== show__reviews ==========*/
+    /*========== form ==========*/
+    form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .form-group {
+            &.rating {
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+            }
+            & > label {
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            textarea {
+                width: 100%;
+                height: 150px;
+            }
+        }
+    }
+    /*========== form ==========*/
+}

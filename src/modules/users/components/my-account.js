@@ -1,7 +1,7 @@
 import Layout from "shared/components/layout/layout"
 import Auth from "./authentication/auth"
 
-function MyAccount (props) {
+function MyAccount () {
     return (
         <Layout>
             <div id="my__account__page">

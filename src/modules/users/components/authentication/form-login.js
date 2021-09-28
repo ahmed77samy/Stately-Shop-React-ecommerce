@@ -61,7 +61,7 @@ function FormLogin (props) {
 
             <MyInput type="password" className="input__default" name="password" placeholder="Your Password" errors={errors} />
             
-            <MyButton value="login" waitrequest={`${waitreq}`} type="submit" className={`btn--reset btn__default btn--primary ${waitreq && 'disabled'}`} />
+            <MyButton value="login" waitrequest={`${waitreq}`} type="submit" className={`btn--reset btn__default btn--dark ${waitreq && 'disabled'}`} />
             
             <Form.Group className="text-center">
                 <p className="text-capitalize">

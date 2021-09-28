@@ -4,7 +4,6 @@ import { useEffect } from "react/cjs/react.development"
 import PropTypes from 'prop-types';
 
 function MyInput (props) {
-
     let { propsformik , name , errors } = props
 
     /**
@@ -28,8 +27,7 @@ function MyInput (props) {
     )
 }
 
-MyInput.proptypes = {
-    propsformik: PropTypes.object.isRequired,
+MyInput.propTypes = {
     errors: PropTypes.object,
     name: PropTypes.string,
     type: PropTypes.string,

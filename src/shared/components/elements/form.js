@@ -3,8 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function MyForm (props) {
-    
-    let { children } = props
+    const { children } = props
 
     /**
      * default action submit if is not defined
@@ -48,7 +47,7 @@ function MyForm (props) {
     )
 }
 
-MyForm.proptypes = {
+MyForm.propTypes = {
     children: PropTypes.node,
 }
 

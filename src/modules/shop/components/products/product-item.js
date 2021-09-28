@@ -1,12 +1,13 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import FiveStars from "shared/components/elements/fivestars"
-import Salary from "shared/components/elements/salary"
-import ThumbnailButtons from "shared/components/elements/thumbnail-buttons"
 import Card from "shared/components/layout/card"
 import Figure from "shared/components/layout/figure"
 import ItemContent from "shared/components/layout/item-content"
 import ProductModal from "shared/components/modals/product-modal"
+import ProductFiveStars from "./product-fivestars"
+import ProductSalary from "./product-salary"
+import ProductThumbnailButtons from "./product-thumbnail-buttons"
+import PropTypes from "prop-types"
 
 function ProductItem (props) {
     const {name , photo , sale, rating, salary, newest} = props.item
@@ -36,11 +37,11 @@ function ProductItem (props) {
                         {newest && <span className="badge badge--right bg--primary--400 text--white">new</span>}
                         {sale?.sale && <span className="badge badge--right bg--secondary--400 text--white">sale</span>}
                     </div>
-                    <ThumbnailButtons />
+                    <ProductThumbnailButtons />
                     <Link to="/" className="anchors--reset" onClick={handleClick}>
                         <img src={photo} alt="product" className="w-100" />
                     </Link>
-                    <ProductModal item={props.item} modal={modal} toggleModal={toggleModal}/>
+                    <ProductModal item={props.item} show={modal} onHide={toggleModal}/>
                 </Figure>
                 {/*========== figure ==========*/}
                 {/*========== item__content ==========*/}
@@ -50,13 +51,17 @@ function ProductItem (props) {
                             {name}
                         </Link>
                     </h4>
-                    <FiveStars stars={rating} reviews={12} />
-                    <Salary sale={sale} salary={salary} />
+                    <ProductFiveStars stars={rating} reviews={12} />
+                    <ProductSalary sale={sale} salary={salary} />
                 </ItemContent>
                 {/*========== item__content ==========*/}
             </div>
         </Card>
     )
+}
+
+ProductItem.propTypes = {
+    item: PropTypes.object.isRequired
 }
 
 export default ProductItem

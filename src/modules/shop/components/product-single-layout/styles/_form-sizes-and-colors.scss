@@ -1,0 +1,68 @@
+/*========== sizes,.colors ==========*/
+.sizes,.colors {
+    margin-bottom: 20px;
+    .form-group {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        & > label {
+            text-transform: uppercase;
+            display: block;
+            font-size: 1rem;
+            font-weight: 500;
+            width: 100%;
+        }
+        .form-check {
+            padding: 0;
+            width: 38px;
+            height: 38px;
+            input {
+                position: relative !important;
+                appearance: none;
+                width: 38px;
+                height: 38px;
+                border: 1px solid rgba(var(--c-neutral-300), $alpha);
+                margin: 0;
+            }
+            label {
+                position: absolute;
+                inset: 0;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+/*========== sizes,.colors ==========*/
+/*========== sizes ==========*/
+.sizes {
+    input {
+        &:checked {
+            background: rgba(var(--c-black), $alpha);
+            border-color: transparent !important;
+            & + label {
+                color: rgba(var(--c-white), $alpha);
+            }
+        }
+    }
+}
+/*========== sizes ==========*/
+/*========== colors ==========*/
+.colors {
+    .form-group {
+        .form-check {
+            input {
+                &:checked {
+                    border: 2px solid rgba(var(--c-black), $alpha);
+                }
+            }
+            label {
+                inset: 5px;
+            }
+        }
+    }
+}
+/*========== colors ==========*/

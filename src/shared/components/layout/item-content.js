@@ -9,9 +9,12 @@ function ItemContent(props) {
     )
 }
 
-ItemContent.proptypes = {
+ItemContent.propTypes = {
     children: PropTypes.node,
-    className: PropTypes.string,
+    className: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.bool,
+      ]),
 }
 
 

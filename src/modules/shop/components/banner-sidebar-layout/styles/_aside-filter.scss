@@ -6,7 +6,7 @@
     ul {
         li {
             &:hover,&.active {
-                color: rgba(var(--c-primary-500), $alpha);
+                color: rgba(var(--c-neutral-700), $alpha);
             }
             /*========== form-check ==========*/
             .form-check {
@@ -19,9 +19,10 @@
                     transform: translateY(-50%);
                     width: 14px;
                     height: 14px;
-                    accent-color: rgba(var(--c-primary-500), $alpha);
+                    accent-color: rgba(var(--c-neutral-700), $alpha);
                 }
                 label {
+                    position: relative;
                     width: 100%;
                     cursor: pointer;
                 }

@@ -1,0 +1,59 @@
+.product__view {
+    figure {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .view__content {
+        /*========== item__content ==========*/
+        .item__content {
+            @import "./product-view-form";
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+            h2 {
+                font-weight: 700;
+            }
+            /*========== wrapper__salary ==========*/
+            .wrapper__salary{
+                span {
+                    &:first-of-type {
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+            /*========== wrapper__salary ==========*/
+            /*========== content__ref ==========*/
+            .content__ref {
+                label {
+                    text-transform: capitalize;
+                    display: block;
+                    font-family: $font-text;
+                    color: rgba(var(--c-black), $alpha);
+                }
+                span {
+                    a {
+                        transition: .3s;
+                        &:hover {
+                            color: rgba(var(--c-primary-500), $alpha);
+                        }
+                    }
+                }
+                .social {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 15px;
+                    a {
+                        color: rgba(var(--c-white) , $alpha) !important;
+                        &:hover {
+                            background: rgba(var(--c-black) , $alpha);
+                        }
+                    }
+                }
+            }
+            /*========== content__ref ==========*/
+        }
+        /*========== item__content ==========*/
+    }
+}

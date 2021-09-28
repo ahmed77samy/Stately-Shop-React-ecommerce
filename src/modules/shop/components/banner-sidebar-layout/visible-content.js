@@ -48,7 +48,7 @@ function VisibleContent () {
             {/*========== visible ==========*/}
             {/*========== HeaderModal ==========*/}
             <HeaderModal className="modal--left" show={modal} onHide={toggleModal} animation={false}>
-                <Modal.Header className="bg--neutral--50">
+                <Modal.Header className="dark--mode">
                     <Modal.Title><h3 className="h6 m-0 text-uppercase">filter items</h3></Modal.Title>
                     <TimesIcon onClick={toggleModal} className="icon" />
                 </Modal.Header>

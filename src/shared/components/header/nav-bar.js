@@ -32,7 +32,7 @@ function NavBar() {
             {/*========== wrapper__badge ==========*/}
             {/*========== Modal ==========*/}
             <HeaderModal className="modal--left" show={modal} onHide={toggleModal} animation={false}>
-                <Modal.Header className="bg--primary--500 dark--mode">
+                <Modal.Header className="dark--mode">
                     <Modal.Title><Logo foreground="light" /></Modal.Title>
                     <TimesIcon onClick={toggleModal} className="icon" />
                 </Modal.Header>

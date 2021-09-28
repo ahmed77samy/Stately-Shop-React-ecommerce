@@ -9,7 +9,7 @@ function Figure(props) {
     )
 }
 
-Figure.proptypes = {
+Figure.propTypes = {
     children: PropTypes.node,
 }
 

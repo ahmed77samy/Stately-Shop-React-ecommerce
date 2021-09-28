@@ -1,0 +1,22 @@
+@import "assets/styles/helpers";
+
+.fivestars__rating {
+    display: flex;
+    column-gap: 2px;
+    .form-check {
+        padding: 0;
+        input {
+            appearance: none;
+        }
+        label {
+            color: rgba(var(--c-neutral-300) , $alpha);
+            transition: .3s;
+            cursor: pointer;
+        }
+        &.active {
+            label {
+                color: rgba(var(--c-star), $alpha);
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import "assets/styles/helpers";
+
+.product__related {
+    /*========== product__header ==========*/
+    .product__header {
+        margin-bottom: 25px;
+        h5 {
+            font-weight: 600;
+            text-transform: uppercase
+        }
+        span {
+            font-size: 1rem
+        }
+    }
+    /*========== product__header ==========*/
+    /*========== my__card ==========*/
+    .my__card {
+        border: 1px solid rgba(var(--c-neutral-100), $alpha);
+        margin-bottom: 1px;
+        .product__item {
+            @import "./product-item";
+        }
+        &:hover {
+            box-shadow: var(--shadow-m);
+            .product__item {
+                .thumbnail__buttons {
+                    a {
+                        opacity: 1;
+                        pointer-events: all;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    /*========== my__card ==========*/
+    /*========== product__control ==========*/
+    .product__control {
+        margin-top: $component-padding;
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+    }
+    /*========== product__control ==========*/
+}

@@ -13,14 +13,14 @@ function Slider () {
     let navigationNextRef = useRef(0)
 
     // filter the items and return its slideshow
-    const productHeader = product_items.filter((item , inex) => {
+    const productHeader = product_items.filter((item , index) => {
         return item.slideshow
     })
 
     // map for productHeader to create SliderItem
-    const itemList = productHeader.map((item , inex) => {
+    const itemList = productHeader.map((item , index) => {
         return (
-            <SwiperSlide key={inex}>
+            <SwiperSlide key={index}>
                 {(values) => 
                     <SliderItem values={values} item={item} />
                 }

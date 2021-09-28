@@ -2,7 +2,6 @@ import FilterCollections from "./filter-collections"
 import FilterColors from "./filter-colors"
 import FilterItem from "./filter-item"
 import FilterSizes from "./filter-sizes"
-import "./styles/banner-aside-layout.scss"
 
 function AsideFilter () {
     return (

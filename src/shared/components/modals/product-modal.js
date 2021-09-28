@@ -5,15 +5,15 @@ import ProductModalItem from "./product-modal-item"
 import PropTypes from "prop-types"
 
 function ProductModal(props) {
-    const { item, toggleModal, modal } = props
+    const { item, onHide } = props
 
     /**
      * {@inheritdoc}
      */
     return (
-        <QuickViewModal className="product__modal" show={modal} onHide={toggleModal}>
+        <QuickViewModal {...props} className={`product__modal ${props.className}`}>
             <Modal.Body>
-                <ProductModalItem item={item} toggleModal={toggleModal} />
+                <ProductModalItem item={item} toggleModal={onHide} />
             </Modal.Body>
         </QuickViewModal>
     )
@@ -21,8 +21,8 @@ function ProductModal(props) {
 
 ProductModal.propTypes = {
     item: PropTypes.object.isRequired,
-    modal: PropTypes.bool.isRequired,
-    toggleModal: PropTypes.func.isRequired,
+    show: PropTypes.bool.isRequired,
+    onHide: PropTypes.func.isRequired,
 }
 
 export default ProductModal

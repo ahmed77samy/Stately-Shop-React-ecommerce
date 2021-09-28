@@ -19,7 +19,7 @@ function FilterItem (props) {
         <div {...props} className={`filter__item ${className}`}>
             <Card>
                 <div className={`item__header d-flex justify-content-between align-items-center ${isopen && "isopen"}`} onClick={toggle} role="button">
-                    <h5 className="text-uppercase mb-0">{title}</h5>
+                    <h5 className="text-uppercase mb-0 h6">{title}</h5>
                     { isopen ? <AngleUpIcon className="icon" /> : <AngleDownIcon className="icon" /> }
                 </div>
                 <ItemContent className={isopen && "isopen"}>

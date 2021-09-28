@@ -20,7 +20,7 @@ function FilterCollections () {
                 <li>
                     <Form.Check
                         type="checkbox"
-                        label={`${item.content} (${item.products})`}
+                        label={<>{item.content}&nbsp;&nbsp;({item.products})</>}
                         id={`banner-side-filter-collection-${Math.random()}-${index}`}
                         onChange={handleChange}
                     />

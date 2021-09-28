@@ -53,7 +53,7 @@ function UserSearch () {
             {/*========== wrapper__badge ==========*/}
             {/*========== HeaderModal ==========*/}
             <HeaderModal className="modal--right" show={modal} onHide={toggleModal} animation={false}>
-                <Modal.Header className="bg--primary--700 dark--mode">
+                <Modal.Header className="dark--mode">
                     <Modal.Title><h3 className="h6 m-0 text-uppercase">search our site</h3></Modal.Title>
                     <TimesIcon onClick={toggleModal} className="icon" />
                 </Modal.Header>

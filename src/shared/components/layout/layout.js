@@ -13,7 +13,7 @@ function Layout (props) {
     )
 }
 
-Layout.proptypes = {
+Layout.propTypes = {
     children: PropTypes.node
 }
 

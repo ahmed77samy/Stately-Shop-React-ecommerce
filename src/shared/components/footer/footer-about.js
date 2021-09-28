@@ -17,13 +17,13 @@ function FooterAbout () {
                     <label><LocationIcon /></label>4005, Silver Business Point India
                 </li>
                 <div className="social">
-                    <Link className="anchors--reset btn__icon google" to="/">
+                    <Link className="anchors--reset btn__icon btn--small google" to="/">
                         <GoogleIcon className="icon" />
                     </Link>
-                    <Link className="anchors--reset btn__icon twitter" to="/">
+                    <Link className="anchors--reset btn__icon btn--small twitter" to="/">
                         <TwitterIcon className="icon" />
                     </Link>
-                    <Link className="anchors--reset btn__icon facebook" to="/">
+                    <Link className="anchors--reset btn__icon btn--small facebook" to="/">
                         <FacebookIcon className="icon" />
                     </Link>
                 </div>

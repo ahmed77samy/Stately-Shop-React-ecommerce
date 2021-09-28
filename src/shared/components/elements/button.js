@@ -22,7 +22,7 @@ function MyButton (props) {
 }
 
 MyButton.propTypes = {
-    value: PropTypes.string.isRequired,
+    value: PropTypes.node.isRequired,
     waitrequest: PropTypes.oneOf(['true', 'false']),
 }
 

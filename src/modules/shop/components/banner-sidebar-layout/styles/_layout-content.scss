@@ -21,7 +21,7 @@
     }
     /*========== banner ==========*/
     @import "./visible-content";
-    .products__list {
+    .product__list {
         .my__card {
             .product__item {
                 @import "../../products/styles/product-item";

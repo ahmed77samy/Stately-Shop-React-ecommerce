@@ -9,7 +9,7 @@ function Product () {
     let limited = 8
 
     // map for items to create item product
-    const itemsList = product_items.map((item , index) => {
+    const itemList = product_items.map((item , index) => {
         return (
             index < limited && 
             <Col xs={12} sm={6} lg={3} key={index}>
@@ -33,7 +33,7 @@ function Product () {
                 {/*========== sec__content ==========*/}
                 <div className="sec__content">
                     <Row className="layout--space">
-                        {itemsList}
+                        {itemList}
                         <Col xs={12}>
                             <Link to="/" className="mx-auto text--white anchors--reset btn__default btn--primary">show more</Link>
                         </Col>

@@ -1,11 +1,11 @@
 import { Col, Row } from "react-bootstrap"
 import Figure from "../layout/figure"
 import ItemContent from "../layout/item-content"
-import FiveStars from "../elements/fivestars"
-import Salary from "../elements/salary"
 import PropTypes from "prop-types"
 import { Link } from "react-router-dom"
 import { TimesIcon } from "shared/components/elements/icons"
+import ProductFiveStars from "modules/shop/components/products/product-fivestars"
+import ProductSalary from "modules/shop/components/products/product-salary"
 
 function ProductModalItem(props) {
     const { photo , name , sale , salary , description , rating , newest } = props.item
@@ -34,10 +34,10 @@ function ProductModalItem(props) {
                             </Link>
                         </h4>
                         <div className="d-flex align-self-stretch">
-                            <Salary sale={sale} salary={salary} className="mr-3" />
-                            <FiveStars stars={rating} />
+                            <ProductSalary sale={sale} salary={salary} className="mr-3" />
+                            <ProductFiveStars stars={rating} />
                         </div>
-                        <p>{description}</p>
+                        <p>{description.short}</p>
                     </ItemContent>
                 </Col>
             </Row>

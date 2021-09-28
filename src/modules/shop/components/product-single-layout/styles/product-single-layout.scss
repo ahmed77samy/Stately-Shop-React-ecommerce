@@ -1,0 +1,13 @@
+@import "assets/styles/helpers";
+
+.product__single__layout{
+    .layout__card{
+        display: flex;
+        flex-direction: column;
+        row-gap: $component-padding;
+        padding: 15px 15px 30px;
+    }
+    @import "./product-view";
+    @import "./product-tab";
+    @import "../../products/styles/product-related.scss";
+}

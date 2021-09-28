@@ -1,0 +1,35 @@
+form {
+    @import "./form-sizes-and-colors";
+    /*========== form__actions ==========*/
+    .form__actions {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        .quantity {
+            .form-group{
+                display: flex;
+                height: 100%;
+                input {
+                    border-left: none;
+                    border-right: none;
+                    width: 50px;
+                    text-align: center;
+                    -webkit-appearance: textfield;
+                    -moz-appearance: textfield;
+                    appearance: textfield;
+                    &::-webkit-inner-spin-button,&::-webkit-outer-spin-button {
+                        -webkit-appearance: none;
+                    }
+                }
+            }
+        }
+        button {
+            border-width: 1px;
+        }
+    }
+    /*========== form__actions ==========*/
+}

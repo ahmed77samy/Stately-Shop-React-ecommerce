@@ -61,7 +61,7 @@ function FormRegister (props) {
 
             <MyInput type="password" className="input__default" name="password_confirmation" placeholder="confirm Password" errors={errors} />
 
-            <MyButton value="register" waitrequest={`${waitreq}`} type="submit" className={`btn--reset btn__default btn--primary ${waitreq && 'disabled'}`} />
+            <MyButton value="register" waitrequest={`${waitreq}`} type="submit" className={`btn--reset btn__default btn--dark ${waitreq && 'disabled'}`} />
 
             <Form.Group className="text-center">
                 <p className="text-capitalize">

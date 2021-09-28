@@ -6,7 +6,7 @@ function FormSocial () {
      * {@inheritdoc}
      */
     return (
-        <div className="form__social">
+        <div className="social">
             <Link className="anchors--reset btn__icon google" to="/">
                 <GoogleIcon className="icon" />
             </Link>

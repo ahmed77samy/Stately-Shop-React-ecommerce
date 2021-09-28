@@ -42,7 +42,7 @@ figure {
 /*========== figure ==========*/
 /*========== item__content ==========*/
 .item__content {
-    padding: 25px 5px;
+    padding: 20px 5px 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -50,8 +50,12 @@ figure {
     text-align: left;
     h4 {
         @include lineclamp(1);
-        font-weight: bold;
+        font-weight: 400;
         margin: 0;
+        transition: .3s;
+        &:hover {
+            color: rgba( var(--c-primary-500) ,$alpha);
+        }
     }
 }
 /*========== item__content ==========*/

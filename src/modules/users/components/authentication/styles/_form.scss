@@ -33,24 +33,14 @@ form {
             }
         }
     }
-    .form__social {
+    .social {
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: 15px;
         a {
-            color: rgba(var(--c-white) , $alpha);
-            &.twitter {
-                background: #1da1f2;
-            }
-            &.facebook {
-                background: #3b5998;
-            }
-            &.google {
-                background: #db402c;
-            }
             &:hover {
-                background: rgba(var(--c-neutral-900) , $alpha);
+                background: rgba(var(--c-black) , $alpha);
             }
         }
     }

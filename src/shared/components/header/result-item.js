@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Figure from '../layout/figure';
 import ItemContent from '../layout/item-content';
 import PropTypes from 'prop-types';
-import Salary from '../elements/salary';
+import ProductSalary from 'modules/shop/components/products/product-salary';
 
 function ResultItem (props) {
     let {photo, name, sale, salary} = props.item
@@ -17,7 +17,7 @@ function ResultItem (props) {
                 <Link to="/" className="anchors--reset">
                     <h6>{name}</h6>
                 </Link>
-                <Salary className="font--size--small" sale={sale} salary={salary} />
+                <ProductSalary className="font--size--small" sale={sale} salary={salary} />
             </ItemContent>
         </div>
     )

@@ -1,5 +1,11 @@
 @import "assets/styles/helpers";
 
+// .container {
+//     @include xl {
+//         max-width: 1300px;
+//     }
+// }
+
 section {
     .sec__header {
         display: flex;
@@ -51,7 +57,6 @@ section {
     padding: 0;
 }
 
-
 .my__card {
     background: rgba(var(--c-white) , $alpha);
     padding: 10px;
@@ -74,6 +79,9 @@ figure , .item__content , .my__card, .modal-content {
     cursor: pointer;
 }
 
+.modal-backdrop {
+    z-index: 99999;
+}
 .modal {
     z-index: 99999;
     .modal-content {
@@ -83,7 +91,7 @@ figure , .item__content , .my__card, .modal-content {
     }
     .modal-body {
         overflow: auto;
-        @include scrollbar()
+        @include scrollbar
     }
 }
 
@@ -125,8 +133,8 @@ aside {
 
 .border__loading__default {
     &.loading--small {
-        width: 18px;
-        height: 18px;
+        width: 14px;
+        height: 14px;
     }
 }
 
@@ -185,4 +193,33 @@ aside {
             width: max-content;
         }
     }
+}
+
+.social {
+    a {
+        color: rgba(var(--c-white) , $alpha);
+        &:hover {
+            color: rgba(var(--c-white) , $alpha);
+        }
+        &.twitter {
+            background: #1da1f2;
+        }
+        &.facebook {
+            background: #3b5998;
+        }
+        &.google {
+            background: #db402c;
+        }
+    }
+}
+
+.play__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: rgba( var(--c-black) , 0.8);
+    color: rgba( var(--c-white) , $alpha);
+    border-radius: 50%;
 }

@@ -12,7 +12,7 @@ function SecHeader (props) {
     )
 }
 
-SecHeader.proptypes = {
+SecHeader.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string,
     className: PropTypes.string,

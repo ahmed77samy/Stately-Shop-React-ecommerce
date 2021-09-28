@@ -9,7 +9,7 @@ function Card (props) {
     )
 }
 
-Card.proptypes = {
+Card.propTypes = {
     children: PropTypes.node,
     className: PropTypes.string
 }

@@ -29,6 +29,10 @@ const HeaderItems = [
             {
                 route: "/shop/banner-sidebar",
                 content: "banner with sidebar"
+            },
+            {
+                route: "/shop/product-single",
+                content: "product single"
             }
         ]
     },

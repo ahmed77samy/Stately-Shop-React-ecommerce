@@ -1,16 +1,26 @@
+$alpha: 1;
 $header-height: 120px;
 $component-padding: 50px;
 $main-space: 50px;
 
-$font-header: 'Merriweather Sans', sans-serif;
+$font-header: 'Poppins', sans-serif;
 $font-text: 'Merriweather Sans', sans-serif;
+
+$text-typo: rgba(var(--c-neutral-400),  $alpha);
+$text-typo-dark: rgba(var(--c-neutral-300),  $alpha);
 
 
 $font-size: 0.9rem;
 
-$alpha: 1;
 
+$btn_inp-height-sm: 38px;
+$btn_inp-padding-sm: 25px;
 
+$btn_inp-height-md: 45px;
+$btn_inp-padding-md: 30px;
+
+$btn_inp-height-lg: 50px;
+$btn_inp-padding-lg: 40px;
 
 
 $header-modal-width: 400px;

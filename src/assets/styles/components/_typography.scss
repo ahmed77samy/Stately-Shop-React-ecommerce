@@ -1,17 +1,20 @@
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,label {
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,label,th {
     font-family: $font-header;
 }
 p,span {
-    color: rgba(var(--c-neutral-400), $alpha);
+    color: $text-typo;
 }
 .dark--mode {
     color: rgba(var(--c-white) , $alpha);
     p,span {
-        color: rgba(var(--c-neutral-300),  $alpha);
+        color: $text-typo-dark;
     }
 }
 .font--size--small {
     font-size: 0.75rem !important;
+}
+.text--typo {
+    color: $text-typo !important;
 }
 .font--header {
     font-family: $font-header;

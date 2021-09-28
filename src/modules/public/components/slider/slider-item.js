@@ -28,7 +28,7 @@ function SliderItem (props) {
                         <div className="item__data dark--mode">
                             {categoryList}
                             <h2 className="mb-4 text-capitalize">{name}</h2>
-                            <p className="mb-4">{description}</p>
+                            <p className="mb-4">{description.short}</p>
                             <Link role="button" to="/" className="anchors--reset btn__default btn--secondary">discover now</Link>
                         </div>
                     </Col>

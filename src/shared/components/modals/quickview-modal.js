@@ -1,6 +1,6 @@
 import { Modal } from "react-bootstrap"
 import PropTypes from 'prop-types';
-// import "./styles/header-modal.scss"
+import "./styles/quick-view-modal.scss"
 
 function QuickViewModal (props) {
     return(

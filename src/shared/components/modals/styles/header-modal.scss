@@ -20,6 +20,7 @@
                 border: none;
                 border-radius: 0;
                 flex-shrink: 0;
+                background: rgba(var(--c-neutral-700) , $alpha);
                 .icon {
                     font-size: 1.5rem;
                     padding: 10px 0 10px 20px;

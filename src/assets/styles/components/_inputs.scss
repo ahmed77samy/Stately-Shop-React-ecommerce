@@ -1,18 +1,24 @@
-input.input__classic {
-    border: none;
-    outline: none;
-    background: rgba( var(--c-neutral-100) , $alpha);
-    padding: 1em;
-}
-
 .input__default {
     border: none;
     outline: none;
     background: rgba(var(--c-neutral-100) , $alpha);
     border: 1px solid transparent;
-    padding: 10px 15px;
+    padding: 0 15px;
+    height: $btn_inp-height-md;
     transition: .3s;
-    border-radius: var(--raduis-3);
+    font-size: 1em;
+    line-height: 1em;
+    &.input--small {
+        height: $btn_inp-height-sm;
+        font-size: 0.9em;
+        line-height: 0.9em;
+    }
+    &.input--large {
+        height: $btn_inp-height-lg;
+        font-size: 1.1em;
+        line-height: 1.1em;
+    }
+
     &:focus {
         background: transparent;
         border: 1px solid rgba(var(--c-neutral-200) , $alpha);
@@ -20,12 +26,11 @@ input.input__classic {
     &.input--border {
         border: 1px solid rgba(var(--c-neutral-200) , $alpha);
         background: transparent;
-        &:focus {
-            border-color: transparent;
-            background: rgba(var(--c-neutral-100) , $alpha);
-        }
     }
     &.input--raduis {
         border-radius: 30px;
+    }
+    &.input__textarea {
+        padding: 15px;
     }
 }

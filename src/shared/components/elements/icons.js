@@ -28,7 +28,10 @@ export const TruckIcon = (props) => <i {...props} className={`fal fa-truck ${pro
 export const ListIcon = (props) => <i {...props} className={`fas fa-bars ${props.className}`}></i>;
 export const GridIcon = (props) => <i {...props} className={`far fa-border-all ${props.className}`}></i>;
 export const FilterHeroIcon = (props) => <i {...props} className={`far fa-sliders-h ${props.className}`}></i>;
-
-
-// export const PlusIcon = (props) => <i {...props} className={`fal fa-plus ${props.className}`}></i>;
-// export const MinusIcon = (props) => <i {...props} className={`fal fa-minus ${props.className}`}></i>;
+export const InStockIcon = (props) => <i {...props} className={`far fa-check-circle ${props.className}`}></i>;
+export const OutStockIcon = (props) => <i {...props} className={`far fa-times-circle ${props.className}`}></i>;
+export const PlusIcon = (props) => <i {...props} className={`fal fa-plus ${props.className}`}></i>;
+export const MinusIcon = (props) => <i {...props} className={`fal fa-minus ${props.className}`}></i>;
+export const CompareIcon = (props) => <i {...props} className={`fal fa-balance-scale-right ${props.className}`}></i>;
+export const ClockIcon = (props) => <i {...props} className={`fal fa-clock ${props.className}`}></i>;
+export const PlayIcon = (props) => <i {...props} className={`fal fa-play ${props.className}`}></i>;

@@ -1,0 +1,47 @@
+.product__tab {
+    /*========== my__tabs ==========*/
+    & > .my__tabs.nav {
+        display: flex;
+        justify-content: center;
+        row-gap: 1px;
+        a {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            border: 1px solid rgba(var(--c-neutral-200), $alpha);
+            flex-grow: 1;
+            transition: .3s;
+            &.active {
+                color: rgba(var(--c-white), $alpha) !important;
+                background: rgba(var(--c-neutral-700), $alpha);
+                border-color: transparent;
+            }
+        }
+    }
+    /*========== my__tabs ==========*/
+    /*========== tab-content ==========*/
+    & > .tab-content {
+        @include sm {
+            border: 1px solid rgba(var(--c-neutral-200), $alpha);
+            padding: 0 15px 25px;
+        }
+    }
+    /*========== tab-content ==========*/
+    /*========== tab-pane ==========*/
+    .tab-pane {
+        margin-top: 50px;
+        .tab__header {
+            margin-bottom: 25px;
+            h5 {
+                font-weight: 600;
+                text-transform: uppercase
+            }
+            span {
+                font-size: 1rem
+            }
+        }
+        @import "./size-guide";
+        @import "./description";
+        @import "./reviews";
+    }
+    /*========== tab-pane ==========*/
+}
