@@ -19,19 +19,22 @@ function FormSizes (props) {
 
     // fetch defaut size from ShopApi
     useEffect(() => {
+        let isMounted = true
         setDefault_size(null)
         ShopApi.showDefaultSize(item.defaultSize_id)
         .then(data => {
-            setDefault_size(data.data.payload);
-            propsformik.setFieldValue("size_id",JSON.stringify(data.data.payload))
-            props.onreset(data.data.payload)
+            if(isMounted) {
+                setDefault_size(data.data.payload);
+                propsformik.setFieldValue("size_id",JSON.stringify(data.data.payload))
+                props.onreset(data.data.payload)
+            }
         })
         .catch(() => {
-            setDefault_size(undefined);
+            if(isMounted) {
+                setDefault_size(undefined);
+            }
         })
-
-        const ac = new AbortController()
-        return () => ac.abort();
+        return () => isMounted = false;
     },[item.id])// eslint-disable-line react-hooks/exhaustive-deps
 
     // fetch sizes from ShopApi

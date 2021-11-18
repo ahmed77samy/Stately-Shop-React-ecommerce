@@ -1,11 +1,26 @@
-import ProductItem from "./product-item"
-import PropTypes from "prop-types"
+import BorderLoading from "shared/components/elements/border-loading"
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import CartItem from "./cart-item"
 
 function Cart (props) {
+    let limited = 5
+    const [limit , setLimit] = useState(limited)
+
+    /**
+     * set limit state to show more items
+     * @param {event} e 
+     */
+    const handleClick = (e) => {
+        e.preventDefault()
+        if(!(limit > props.data.length)) {
+            return setLimit(limit => limit + limited)
+        }
+    }
 
     // map for userdata.cart to create product item
-    const cartList = props.userData.cart.map((item , index) => {
-        return <ProductItem item={item} key={index} />
+    const cartList = props.data?.map((item , index) => {
+        return index < limit && <CartItem item={item} key={index} />
     })
     
     /**
@@ -33,15 +48,20 @@ function Cart (props) {
             {/*========== tab__header ==========*/}
             {/*========== tab__content ==========*/}
             <div className="tab__content">
-                {cartList}
+                {
+                    // check data to previews
+                    props.data === null ? <BorderLoading /> :
+                    props.data === undefined ? <h5 className="text--typo">No Items Found !</h5> :
+                    props.data && cartList
+                }
             </div>
+            {
+                props.data && props.data.length > 0 && limit < props.data.length && 
+                <Link to="/" className="anchors--reset d-block text-center text-capitalize text--primary--500 mx-auto mt-2" onClick={handleClick}>show more</Link>
+            }
             {/*========== tab__content ==========*/}
         </div>
     )
-}
-
-Cart.propTypes = {
-    userData : PropTypes.object.isRequired
 }
 
 export default Cart

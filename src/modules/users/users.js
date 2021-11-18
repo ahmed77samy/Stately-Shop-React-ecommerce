@@ -1,7 +1,7 @@
 import Cache from "core/cache"
 import UserApi from "./services/api"
 import * as Yup from "yup"
-import { EXIT_USER, FETCH_USER } from "./services/actions"
+import { EXIT_USER, FETCH_USER, USER_CART, USER_FAVOURIT } from "./services/actions"
 import { store } from "core/route-service"
 
 class Users {
@@ -96,6 +96,40 @@ class Users {
                 return resolve()
             }
         })
+    }
+
+    /**
+     * fetch request user favourit from UserApi
+     * @param {string} Token 
+     * @param {string} userid 
+     */
+    userFavourit (Token ,userid) {
+        if(store.getState().userReducer.user_wishlist === null) {
+            UserApi.userFavourit(Token ,userid)
+            .then(({data}) => {
+                store.dispatch(USER_FAVOURIT(data.payload))
+            })
+            .catch(() => {
+                store.dispatch(USER_FAVOURIT())
+            })
+        }
+    }
+
+    /**
+     * fetch request user cart from UserApi
+     * @param {string} Token 
+     * @param {string} userid 
+     */
+    userCart (Token ,userid) {
+        if(store.getState().userReducer.user_cart === null) {
+            UserApi.userCart(Token ,userid)
+            .then(({data}) => {
+                store.dispatch(USER_CART(data.payload))
+            })
+            .catch(() => {
+                store.dispatch(USER_CART())
+            })
+        }
     }
 }
 

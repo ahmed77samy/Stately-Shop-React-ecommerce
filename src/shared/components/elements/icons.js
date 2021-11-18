@@ -37,6 +37,6 @@ export const ClockIcon = (props) => <i {...props} className={`fal fa-clock ${pro
 export const PlayIcon = (props) => <i {...props} className={`fal fa-play ${props.className}`}></i>;
 export const CommentIcon = (props) => <i {...props} className={`fal fa-comments ${props.className}`}></i>;
 export const OrdersIcon = (props) => <i {...props} className={`fal fa-shopping-bag ${props.className}`}></i>;
-
-
 export const TrashIcon = (props) => <i {...props} className={`fal fa-trash ${props.className}`}></i>;
+
+export const EditIcon = (props) => <i {...props} className={`far fa-pencil ${props.className}`}></i>;

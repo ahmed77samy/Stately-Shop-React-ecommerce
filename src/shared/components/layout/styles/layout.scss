@@ -125,6 +125,22 @@ figure, .my__card, .modal-content {
     }
 }
 
+.banner__interface {
+    .item__content {
+        padding: 30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        h5 {
+            font-weight: 700;
+        }
+        h2 {
+            font-weight: 900;
+        }
+    }
+}
 
 aside {
     .aside__header {

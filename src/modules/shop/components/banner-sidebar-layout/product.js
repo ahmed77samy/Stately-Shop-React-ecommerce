@@ -13,10 +13,7 @@ function Product (props) {
     let sort = props.sort
     let visible = props.visible
 
-    /**
-     * set limit state to show more items
-     * @param {event} e 
-     */
+    // set limit state to show more items
     const handleClick = () => {
         if(!(limit > products.length)) {
             return setLimit(limit => limit + limited)
@@ -94,7 +91,7 @@ function Product (props) {
                     products && itemsList
                 }
             </Row>
-            {products && products.length > 0 && <button to="/" className="mx-auto mt-5 btn--reset btn__default btn--primary" onClick={handleClick}>show more</button>}
+            {products && products.length > 0 && limit < products.length && <button className="mx-auto mt-5 btn--reset btn__default btn--primary" onClick={handleClick}>show more</button>}
         </div>
     )
 }

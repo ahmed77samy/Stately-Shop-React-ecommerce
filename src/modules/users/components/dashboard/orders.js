@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 function Orders (props) {
     // map for userData.orders to create order items
-    const orderList = props.userData.orders?.map((item , index) => {
+    const orderList = props.data?.map((item , index) => {
         return (
             <OrderItem className={index === 0 && "active"} item={item} key={index} />
         )
@@ -41,7 +41,7 @@ function Orders (props) {
 }
 
 Orders.propTypes = {
-    userData: PropTypes.object.isRequired
+    data: PropTypes.array.isRequired
 }
 
 export default Orders

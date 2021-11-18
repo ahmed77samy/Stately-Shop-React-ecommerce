@@ -10,23 +10,27 @@ export const DashBoardItems = [
         eventKey: "orders",
         Component: Orders,
         Icon: OrdersIcon,
+        data: null
     },
     {
         content: "cart",
         eventKey: "cart",
         Component: Cart,
         Icon: CartIcon,
+        data: null
     },
     {
         content: "reviews",
         eventKey: "reviews",
         Component: Reviews,
         Icon: CommentIcon,
+        data: null
     },
     {
         content: "favourites",
         eventKey: "favourites",
         Component: Favourite,
         Icon: HeartIcon,
+        data: null
     },
 ]

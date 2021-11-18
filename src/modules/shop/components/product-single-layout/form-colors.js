@@ -19,19 +19,23 @@ function FormColors (props) {
 
     // fetch defaut color from ShopApi
     useEffect(() => {
+        let isMounted = true
         setDefault_color(null)
         ShopApi.showDefaultColor(item.defaultColor_id)
         .then(data => {
-            setDefault_color(data.data.payload);
-            propsformik.setFieldValue("color_id", JSON.stringify(data.data.payload))
-            props.onreset(data.data.payload)
+            if(isMounted) {
+                setDefault_color(data.data.payload);
+                propsformik.setFieldValue("color_id", JSON.stringify(data.data.payload))
+                props.onreset(data.data.payload)
+            }
         })
         .catch(() => {
-            setDefault_color(undefined);
+            if(isMounted) {
+                setDefault_color(undefined);
+            }
         })
 
-        const ac = new AbortController()
-        return () => ac.abort();
+        return () => isMounted = false;
     },[item.id])// eslint-disable-line react-hooks/exhaustive-deps
 
     // fetch colors from ShopApi

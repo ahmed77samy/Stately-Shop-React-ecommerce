@@ -1,21 +1,18 @@
 import React from "react"
 import { Tab } from "react-bootstrap"
-import PropTypes from "prop-types"
 
 function ContentItem (props) {
-    const { eventKey, Component } = props.item
+    const { eventKey, Component, data } = props.item
+
+    // console.log(data);
     /**
      * {@inheritdoc}
      */
     return (
         <Tab.Pane eventKey={eventKey}>
-            <Component userData={props.user} />
+            <Component data={data} />
         </Tab.Pane>
     )
-}
-
-ContentItem.propTypes = {
-    user: PropTypes.object.isRequired
 }
 
 export default ContentItem

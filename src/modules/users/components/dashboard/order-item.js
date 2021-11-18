@@ -1,12 +1,12 @@
 import PropTypes from "prop-types"
 import { ClockIcon } from "shared/components/elements/icons"
-import ProductItem from "./product-item"
+import OrderContent from "./order-content"
 
 function OrderItem (props) {
     const { serial, pending, date, total, products } = props.item
 
     // map for products to create product item
-    const productList = products.map((item , index) => <ProductItem key={index} item={item} />)
+    const productList = products.map((item , index) => <OrderContent key={index} item={item} />)
 
     /**
      * remove all active class from order item

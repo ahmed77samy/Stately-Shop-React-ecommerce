@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 function Reviews (props) {
 
     // map for userdata.favourite to create product item
-    const reviewsList = props.userData.reviews.map((item , index) => {
+    const reviewsList = props.data.map((item , index) => {
         return <ReviewsItem item={item} key={index} />
     })
 
@@ -40,7 +40,7 @@ function Reviews (props) {
 }
 
 Reviews.propTypes = {
-    userData : PropTypes.object.isRequired
+    data : PropTypes.array.isRequired
 }
 
 export default Reviews

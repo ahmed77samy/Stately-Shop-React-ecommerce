@@ -17,7 +17,7 @@ function CollectionItem(props) {
             <Card>
                 {/*========== figure ==========*/}
                 <Figure className="anchors--effect">
-                    <Link className="anchors--reset" to="/">
+                    <Link className="anchors--reset" to="/shop/banner-sidebar">
                         <img src={`${main_root}/${cat_img}`} alt="collection" />
                     </Link>
                 </Figure>
@@ -28,7 +28,7 @@ function CollectionItem(props) {
                         <h6 className="m-0 text-uppercase">{cat_name}</h6>
                         <p className="m-0 font--size--small text-uppercase">82 products</p>
                     </div>
-                    <Link to="/" className="anchors--reset">
+                    <Link to="/shop/banner-sidebar" className="anchors--reset">
                         <span className="text-uppercase font--size--small">view all</span>
                     </Link>
                 </ItemContent>

@@ -1,7 +1,7 @@
 import { store } from "core/route-service";
 import { ADD_TO_CART } from "modules/users/services/actions";
 import * as Yup from "yup"
-import { FETCH_PRODUCT, STORE_REVIEWS } from "./services/actions";
+import { FETCH_COLLECTION, FETCH_PRODUCT, STORE_REVIEWS } from "./services/actions";
 import ShopApi from "./services/api"
 
 class Shop {
@@ -37,9 +37,20 @@ class Shop {
         }
     }
 
-    // searchProducts() {
-        
-    // }
+    /**
+     *  fetch the collections from ShopAPI
+     */
+    getCollections() {
+        if(store.getState().shopReducer.collections === null) {
+            ShopApi.getCategories()
+            .then(data => {
+                store.dispatch(FETCH_COLLECTION(data.data.payload))
+            })
+            .catch(() => {
+                store.dispatch(FETCH_COLLECTION())
+            })
+        }
+    }
 
     /**
      * add the given data to store

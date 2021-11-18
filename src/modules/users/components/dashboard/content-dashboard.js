@@ -2,14 +2,13 @@ import { Tab } from "react-bootstrap"
 import Card from "shared/components/layout/card"
 import ContentItem from "./content-item"
 import { DashBoardItems } from "./items"
-import PropTypes from "prop-types"
 
-function ContentDashoard (props) {
+function ContentDashoard () {
 
     // map for DashBoardItems to create content item
     const contentList = DashBoardItems.map((item, index) => {
         return (
-            <ContentItem key={index} item={item} user={props.user} />
+            <ContentItem key={index} item={item} />
         )
     })
 
@@ -25,10 +24,6 @@ function ContentDashoard (props) {
             </Card>
         </div>
     )
-}
-
-ContentDashoard.propTypes = {
-    user: PropTypes.object.isRequired
 }
 
 export default ContentDashoard

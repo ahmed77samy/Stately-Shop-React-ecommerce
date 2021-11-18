@@ -1,0 +1,9 @@
+@import "assets/styles/helpers";
+
+$padding: 10px;
+
+section.collections__layout {
+    .collection__list {
+        @import "./collection-item";
+    }
+}

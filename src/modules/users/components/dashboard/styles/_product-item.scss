@@ -52,4 +52,14 @@
         }
     }
     /*========== subtotal, quantity ==========*/
+    /*========== actions ==========*/
+    .actions {
+        display: flex;
+        column-gap: 10px;
+        a.badge__raduis {
+            box-shadow: none;
+            color: rgba(var(--c-white), $alpha) !important;
+        }
+    }
+    /*========== actions ==========*/
 }

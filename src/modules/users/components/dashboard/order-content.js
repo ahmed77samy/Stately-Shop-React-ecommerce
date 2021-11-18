@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import Figure from "shared/components/layout/figure"
 import ItemContent from "shared/components/layout/item-content"
 
-function ProductItem (props) {
+function OrderContent (props) {
     const {product, size, color, quantity} = props.item
     const {name, photo, salary, sale} = product
 
@@ -50,8 +50,8 @@ function ProductItem (props) {
     )
 }
 
-ProductItem.propTypes = {
+OrderContent.propTypes = {
     item: PropTypes.object.isRequired
 }
 
-export default ProductItem
+export default OrderContent

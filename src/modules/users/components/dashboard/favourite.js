@@ -1,13 +1,27 @@
 import FavouriteItem from "./favourite-item"
-import PropTypes from "prop-types"
 import { TrashIcon } from "shared/components/elements/icons"
+import { Link } from "react-router-dom"
+import { useState } from "react"
 
 function Favourite (props) {
+    let limited = 5
+    const [limit , setLimit] = useState(limited)
 
     // map for userdata.favourite to create product item
-    const favouriteList = props.userData.favourite.map((item , index) => {
-        return <FavouriteItem item={item} key={index} />
+    const favouriteList = props.data?.map((item , index) => {
+        return index < limit && <FavouriteItem item={item} key={index} />
     })
+
+    /**
+     * set limit state to show more items
+     * @param {event} e 
+     */
+     const handleClick = (e) => {
+        e.preventDefault()
+        if(!(limit > props.data.length)) {
+            return setLimit(limit => limit + limited)
+        }
+    }
     
     /**
      * {@inheritdoc}
@@ -26,13 +40,13 @@ function Favourite (props) {
             <div className="tab__content">
                 {favouriteList}
             </div>
+            {
+                props.data && props.data.length > 0 && limit < props.data.length && 
+                <Link to="/" className="anchors--reset d-block text-center text-capitalize text--primary--500 mx-auto mt-2" onClick={handleClick}>show more</Link>
+            }
             {/*========== tab__content ==========*/}
         </div>
     )
-}
-
-Favourite.propTypes = {
-    userData : PropTypes.object.isRequired
 }
 
 export default Favourite

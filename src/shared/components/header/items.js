@@ -30,9 +30,13 @@ const HeaderItems = [
                 content: "banner with sidebar"
             },
             {
+                route: "/shop/collections",
+                content: "collections"
+            },
+            {
                 route: "/shop/product-single/1",
                 content: "product single"
-            }
+            },
         ]
     },
     {

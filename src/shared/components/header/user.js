@@ -4,45 +4,31 @@ import UserCart from './user-cart';
 import UserWishlist from './user-wishlist';
 import users from "modules/users/users"
 import { useEffect } from 'react';
-import UserApi from "modules/users/services/api"
-import { useSelector ,useDispatch } from 'react-redux';
-import { USER_CART, USER_FAVOURIT } from 'modules/users/services/actions';
+import { useSelector } from 'react-redux';
 
 function User() {
-    let dispatch = useDispatch();
     let loggedIn = users.isLoggedIn();
     let userwishlist = useSelector(state => loggedIn && state.userReducer.user_wishlist)
     let usercart = useSelector(state => loggedIn && state.userReducer.user_cart)
     let token = useSelector(state => loggedIn && state.userReducer.user.access_token);
     let id = useSelector(state => loggedIn && state.userReducer.user.user.id);
 
+    // fetch data user from API
     useEffect(() => {
-        // fetch data user wishlist from API
-        function fetchUserWishlist () {
-            UserApi.userFavourit(token ,id)
-            .then(({data}) => {
-                dispatch(USER_FAVOURIT(data.payload))
-            })
-            .catch(() => {
-                dispatch(USER_FAVOURIT())
-            })
+        let isMounted = true
+        if (loggedIn && !userwishlist && isMounted) {
+            users.userFavourit(token ,id)
         }
-        // fetch data user wishlist from API
-        function fetchUserCart () {
-            UserApi.userCart(token ,id)
-            .then(({data}) => {
-                dispatch(USER_CART(data.payload))
-            })
-            .catch(() => {
-                dispatch(USER_CART())
-            })
+        return () => isMounted = false;
+    },[loggedIn, id])// eslint-disable-line react-hooks/exhaustive-deps
+
+    // fetch data user from API
+    useEffect(() => {
+        let isMounted = true
+        if (loggedIn && !usercart && isMounted) {
+            users.userCart(token ,id)
         }
-        if (loggedIn && !userwishlist) {
-            fetchUserWishlist()
-        }
-        if (loggedIn && !usercart) {
-            fetchUserCart()
-        }
+        return () => isMounted = false;
     },[loggedIn, id])// eslint-disable-line react-hooks/exhaustive-deps
 
     /**
