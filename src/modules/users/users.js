@@ -1,11 +1,12 @@
 import Cache from "core/cache"
-import { NavigateTo , History } from "core/route-service"
+import UserApi from "./services/api"
 import * as Yup from "yup"
+import { EXIT_USER, FETCH_USER } from "./services/actions"
+import { store } from "core/route-service"
 
 class Users {
     constructor() {
         this.userData = Cache.get("USERTOKEN")
-        this.history = History()
     }
     /**
      * validation object is contain all validation that belongs to authentication
@@ -36,31 +37,65 @@ class Users {
         password: this.validation.password,
         password_confirmation: this.validation.password_confirmation
     }
-    
+
+    /**
+     * check userData is found
+     * send request to safe realtime
+     * @returns {boolean}
+     */
     isLoggedIn() {
-        if(this.userData) {
-            return true
+        let user = store.getState().userReducer.user;
+        if(user !== null) {
+            if(user.access_token === this.userData) {
+                return true
+            } else {
+                return false
+            }
         }
         return false
     }
 
     /**
-     * add the given token to cache but not send request
-     * navigate to ...
+     * add the given token to cache and store
      * @param {string} Token 
      */
-    login (Token) {
-        this.userData = Token
-        Cache.set('USERTOKEN' , Token)
-        NavigateTo("/user")
+    login (data) {
+        this.userData = data.access_token
+        Cache.set('USERTOKEN' , data.access_token)
+        store.dispatch(FETCH_USER(data));
     }
 
     /**
-     * remove user data from cache and log out
+     * remove user data from cache and store
      */
     logout() {
         Cache.remove("USERTOKEN")
         this.userData = undefined
+        store.dispatch(EXIT_USER());
+    }
+
+    /**
+     * check if the userData is existing
+     * use the api realtime
+     * @returns {Promise}
+     */
+    refresh() {
+        return new Promise((resolve) => {
+            if(this.userData) {
+                this.userData = Cache.get("USERTOKEN")
+                UserApi.realTime(this.userData)
+                .then((data) => {
+                    this.login(data.data)
+                    return resolve(data.data)
+                })
+                .catch(() => {
+                    this.logout()
+                    return resolve()
+                })
+            } else {
+                return resolve()
+            }
+        })
     }
 }
 

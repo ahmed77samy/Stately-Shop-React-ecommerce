@@ -1,10 +1,19 @@
 @import "assets/styles/helpers";
 
-// .container {
-//     @include xl {
-//         max-width: 1300px;
-//     }
-// }
+.container {
+    @include sm {
+        max-width: 620px;
+    }
+    @include md {
+        max-width: 800px;
+    }
+    @include lg {
+        max-width: 1050px;
+    }
+    @include xl {
+        max-width: 1270px;
+    }
+}
 
 section {
     .sec__header {
@@ -69,8 +78,8 @@ figure {
 }
 
 
-figure , .item__content , .my__card, .modal-content {
-    border-radius: 0;
+figure, .my__card, .modal-content {
+    border-radius: 1em;
     overflow: hidden;
 }
 
@@ -119,14 +128,15 @@ figure , .item__content , .my__card, .modal-content {
 
 aside {
     .aside__header {
-        padding: $aside-padding;
+        padding: 18px $aside-padding;
+        background: rgba(var(--c-neutral-100), $alpha);
+        color: rgba(var(--c-black), $alpha);
         h5 {
             text-transform: capitalize;
-            font-weight: 600;
         }
     }
     .aside__content {
-        padding: $aside-padding;
+        padding: 0 $aside-padding;
     }
 }
 

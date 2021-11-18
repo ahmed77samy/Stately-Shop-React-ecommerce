@@ -1,6 +1,6 @@
 .btn__default,.btn__icon {
     --forground: rgba(var(--c-neutral-400), 1);
-    --hover: rgba(var(--c-neutral-300), 1);
+    --hover: rgba(var(--c-neutral-500), 1);
     --color: rgba(var(--c-white), 1);
     border: none;
     transition: .3s;
@@ -54,26 +54,32 @@
     --color: rgba(var(--c-black), 1);
 }
 .btn--dark {
-    --forground: rgba(var(--c-neutral-900), 1);
-    --hover: rgba(var(--c-neutral-600), 1);
+    --forground: rgba(var(--c-neutral-600), 1);
+    --hover: rgba(var(--c-neutral-900), 1);
     --color: rgba(var(--c-white), 1);
 }
 .btn--primary {
-    --forground: rgba(var(--c-primary-700), 1);
-    --hover: rgba(var(--c-primary-500), 1);
+    --forground: rgba(var(--c-primary-500), 1);
+    --hover: rgba(var(--c-primary-700), 1);
     --color: rgba(var(--c-white), 1);
 }
 .btn--secondary {
-    --forground: rgba(var(--c-secondary-700), 1);
-    --hover: rgba(var(--c-secondary-500), 1);
+    --forground: rgba(var(--c-secondary-500), 1);
+    --hover: rgba(var(--c-secondary-700), 1);
     --color: rgba(var(--c-white), 1);
 }
 .btn--border {
-    color: var(--forground);
+    color: var(--hover);
     background: transparent;
-    border: 2px solid var(--hover);
+    border: 2px solid var(--forground);
     &:hover,&.active,&:active {
         color: var(--color);
         border-color: transparent;
+    }
+    &:hover,&.active {
+        background: var(--forground);
+    }
+    &:active {
+        background: var(--hover);
     }
 }

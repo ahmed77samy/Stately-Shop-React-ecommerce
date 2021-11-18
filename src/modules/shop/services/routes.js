@@ -7,5 +7,6 @@ import ProductSingle from "../components/product-single";
  */
 export default function shopRoutes (route) {
     route("/shop/banner-sidebar" , BannerSidebar);
-    route("/shop/product-single" , ProductSingle);
+    route("/shop/banner-sidebar/:key_search" , BannerSidebar);
+    route("/shop/product-single/:id" , ProductSingle);
 }

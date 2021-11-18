@@ -37,13 +37,109 @@ export const wishlist_items = [
         photobanner: productbanner1,
         name: "title product name title product name",
         sale: {
-            sale: 8,
+            sale: 50,
             date: new Date(2020, 12, 7)
         },
         rating: 4,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        reviews: [
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+        ],
+        description: {
+            short: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            long: {
+                description: "Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci.",
+                features: {
+                    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ‘s standard dummy text. Lorem Ipsum has been the industry’s standard dummy text ever since. Lorem Ipsum is simply dummy text.",
+                    items: [
+                        'Praesent id enim sit amet.Tdio vulputate',
+                        'Eleifend in in tortor. ellus massa.Dristique sitii',
+                        'Massa ristique sit amet condim vel',
+                        'Dilisis Facilisis quis sapien. Praesent id enim sit amet'
+                    ]
+                },
+                Specifications: {
+                    material: "Praesent id enim sit amet.Tdio",
+                    'recommended use': "Praesent id enim sit amet.Tdio vulputate eleifend in in tortor. ellus massa. siti",
+                    warranty: "2 year warranty",
+                    manufacturer: "Praesent id enim",
+                }
+            },
+            video: {
+                video: video1,
+                poster: postervideo1
+            }
+        },
         slideshow: true,
-        salary: 50,
+        salary: 100,
         category: [{name: "jewelry" , path: "/"}, {name: "children" , path: "/"}]
     },
     {
@@ -51,11 +147,107 @@ export const wishlist_items = [
         photobanner: productbanner2,
         name: "title product name title product name title product name title product name",
         sale: {
-            sale: 8,
+            sale: 77,
             date: new Date(2020, 12, 7)
         },
         rating: 2,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        reviews: [
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+        ],
+        description: {
+            short: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            long: {
+                description: "Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci.",
+                features: {
+                    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ‘s standard dummy text. Lorem Ipsum has been the industry’s standard dummy text ever since. Lorem Ipsum is simply dummy text.",
+                    items: [
+                        'Praesent id enim sit amet.Tdio vulputate',
+                        'Eleifend in in tortor. ellus massa.Dristique sitii',
+                        'Massa ristique sit amet condim vel',
+                        'Dilisis Facilisis quis sapien. Praesent id enim sit amet'
+                    ]
+                },
+                Specifications: {
+                    material: "Praesent id enim sit amet.Tdio",
+                    'recommended use': "Praesent id enim sit amet.Tdio vulputate eleifend in in tortor. ellus massa. siti",
+                    warranty: "2 year warranty",
+                    manufacturer: "Praesent id enim",
+                }
+            },
+            video: {
+                video: video1,
+                poster: postervideo1
+            }
+        },
         salary: 20,
         category: [{name: "garden" , path: "/"}, {name: "children" , path: "/"}],
         newest: true,
@@ -70,7 +262,103 @@ export const wishlist_items = [
             date: new Date(2020, 12, 7)
         },
         rating: 3,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        reviews: [
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+        ],
+        description: {
+            short: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            long: {
+                description: "Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci.",
+                features: {
+                    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ‘s standard dummy text. Lorem Ipsum has been the industry’s standard dummy text ever since. Lorem Ipsum is simply dummy text.",
+                    items: [
+                        'Praesent id enim sit amet.Tdio vulputate',
+                        'Eleifend in in tortor. ellus massa.Dristique sitii',
+                        'Massa ristique sit amet condim vel',
+                        'Dilisis Facilisis quis sapien. Praesent id enim sit amet'
+                    ]
+                },
+                Specifications: {
+                    material: "Praesent id enim sit amet.Tdio",
+                    'recommended use': "Praesent id enim sit amet.Tdio vulputate eleifend in in tortor. ellus massa. siti",
+                    warranty: "2 year warranty",
+                    manufacturer: "Praesent id enim",
+                }
+            },
+            video: {
+                video: video1,
+                poster: postervideo1
+            }
+        },
         salary: 111,
         category: [{name: "toop" , path: "/"}, {name: "children" , path: "/"}]
     },
@@ -79,11 +367,107 @@ export const wishlist_items = [
         photobanner: productbanner1,
         name: "title product name title product name",
         sale: {
-            sale: 8,
+            sale: 77,
             date: new Date(2020, 12, 7)
         },
         rating: 1,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        reviews: [
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+        ],
+        description: {
+            short: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            long: {
+                description: "Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci.",
+                features: {
+                    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ‘s standard dummy text. Lorem Ipsum has been the industry’s standard dummy text ever since. Lorem Ipsum is simply dummy text.",
+                    items: [
+                        'Praesent id enim sit amet.Tdio vulputate',
+                        'Eleifend in in tortor. ellus massa.Dristique sitii',
+                        'Massa ristique sit amet condim vel',
+                        'Dilisis Facilisis quis sapien. Praesent id enim sit amet'
+                    ]
+                },
+                Specifications: {
+                    material: "Praesent id enim sit amet.Tdio",
+                    'recommended use': "Praesent id enim sit amet.Tdio vulputate eleifend in in tortor. ellus massa. siti",
+                    warranty: "2 year warranty",
+                    manufacturer: "Praesent id enim",
+                }
+            },
+            video: {
+                video: video1,
+                poster: postervideo1
+            }
+        },
         salary: 40,
         category: [{name: "women" , path: "/"}, {name: "children" , path: "/"}],
         newest: true
@@ -93,7 +477,103 @@ export const wishlist_items = [
         photobanner: productbanner2,
         name: "title product name title product name",
         rating: 5,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        reviews: [
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+        ],
+        description: {
+            short: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            long: {
+                description: "Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci.",
+                features: {
+                    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ‘s standard dummy text. Lorem Ipsum has been the industry’s standard dummy text ever since. Lorem Ipsum is simply dummy text.",
+                    items: [
+                        'Praesent id enim sit amet.Tdio vulputate',
+                        'Eleifend in in tortor. ellus massa.Dristique sitii',
+                        'Massa ristique sit amet condim vel',
+                        'Dilisis Facilisis quis sapien. Praesent id enim sit amet'
+                    ]
+                },
+                Specifications: {
+                    material: "Praesent id enim sit amet.Tdio",
+                    'recommended use': "Praesent id enim sit amet.Tdio vulputate eleifend in in tortor. ellus massa. siti",
+                    warranty: "2 year warranty",
+                    manufacturer: "Praesent id enim",
+                }
+            },
+            video: {
+                video: video1,
+                poster: postervideo1
+            }
+        },
         salary: 77,
         slideshow: true,
         category: [{name: "golden" , path: "/"}, {name: "children" , path: "/"}]
@@ -103,7 +583,103 @@ export const wishlist_items = [
         photobanner: productbanner3,
         name: "title product name title product name",
         rating: 2,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        reviews: [
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+        ],
+        description: {
+            short: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            long: {
+                description: "Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci.",
+                features: {
+                    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ‘s standard dummy text. Lorem Ipsum has been the industry’s standard dummy text ever since. Lorem Ipsum is simply dummy text.",
+                    items: [
+                        'Praesent id enim sit amet.Tdio vulputate',
+                        'Eleifend in in tortor. ellus massa.Dristique sitii',
+                        'Massa ristique sit amet condim vel',
+                        'Dilisis Facilisis quis sapien. Praesent id enim sit amet'
+                    ]
+                },
+                Specifications: {
+                    material: "Praesent id enim sit amet.Tdio",
+                    'recommended use': "Praesent id enim sit amet.Tdio vulputate eleifend in in tortor. ellus massa. siti",
+                    warranty: "2 year warranty",
+                    manufacturer: "Praesent id enim",
+                }
+            },
+            video: {
+                video: video1,
+                poster: postervideo1
+            }
+        },
         salary: 20,
         slideshow: true,
         category: [{name: "neutral" , path: "/"}, {name: "children" , path: "/"}],
@@ -114,7 +690,103 @@ export const wishlist_items = [
         photobanner: productbanner1,
         name: "title product name title product name",
         rating: 5,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        reviews: [
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+        ],
+        description: {
+            short: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            long: {
+                description: "Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci.",
+                features: {
+                    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ‘s standard dummy text. Lorem Ipsum has been the industry’s standard dummy text ever since. Lorem Ipsum is simply dummy text.",
+                    items: [
+                        'Praesent id enim sit amet.Tdio vulputate',
+                        'Eleifend in in tortor. ellus massa.Dristique sitii',
+                        'Massa ristique sit amet condim vel',
+                        'Dilisis Facilisis quis sapien. Praesent id enim sit amet'
+                    ]
+                },
+                Specifications: {
+                    material: "Praesent id enim sit amet.Tdio",
+                    'recommended use': "Praesent id enim sit amet.Tdio vulputate eleifend in in tortor. ellus massa. siti",
+                    warranty: "2 year warranty",
+                    manufacturer: "Praesent id enim",
+                }
+            },
+            video: {
+                video: video1,
+                poster: postervideo1
+            }
+        },
         salary: 100,
         category: [{name: "primay" , path: "/"}, {name: "children" , path: "/"}],
         newest: true
@@ -124,7 +796,103 @@ export const wishlist_items = [
         photobanner: productbanner2,
         name: "title product name title product name",
         rating: 1,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        reviews: [
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+        ],
+        description: {
+            short: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            long: {
+                description: "Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci.",
+                features: {
+                    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ‘s standard dummy text. Lorem Ipsum has been the industry’s standard dummy text ever since. Lorem Ipsum is simply dummy text.",
+                    items: [
+                        'Praesent id enim sit amet.Tdio vulputate',
+                        'Eleifend in in tortor. ellus massa.Dristique sitii',
+                        'Massa ristique sit amet condim vel',
+                        'Dilisis Facilisis quis sapien. Praesent id enim sit amet'
+                    ]
+                },
+                Specifications: {
+                    material: "Praesent id enim sit amet.Tdio",
+                    'recommended use': "Praesent id enim sit amet.Tdio vulputate eleifend in in tortor. ellus massa. siti",
+                    warranty: "2 year warranty",
+                    manufacturer: "Praesent id enim",
+                }
+            },
+            video: {
+                video: video1,
+                poster: postervideo1
+            }
+        },
         salary: 20,
         category: [{name: "clothes" , path: "/"}, {name: "children" , path: "/"}]
     },
@@ -137,7 +905,103 @@ export const wishlist_items = [
             date: new Date(2020, 12, 7)
         },
         rating: 4,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        reviews: [
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+            {
+                name: "Emma john",
+                photo: userphoto1,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "September 22, 2020 at 9:42 pm",
+                rating: 4
+            },
+            {
+                name: "John Doe",
+                photo: userphoto2,
+                comment: "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue.",
+                time: "may 17, 2020 at 3:12 pm",
+                rating: 3
+            },
+        ],
+        description: {
+            short: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            long: {
+                description: "Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci.",
+                features: {
+                    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ‘s standard dummy text. Lorem Ipsum has been the industry’s standard dummy text ever since. Lorem Ipsum is simply dummy text.",
+                    items: [
+                        'Praesent id enim sit amet.Tdio vulputate',
+                        'Eleifend in in tortor. ellus massa.Dristique sitii',
+                        'Massa ristique sit amet condim vel',
+                        'Dilisis Facilisis quis sapien. Praesent id enim sit amet'
+                    ]
+                },
+                Specifications: {
+                    material: "Praesent id enim sit amet.Tdio",
+                    'recommended use': "Praesent id enim sit amet.Tdio vulputate eleifend in in tortor. ellus massa. siti",
+                    warranty: "2 year warranty",
+                    manufacturer: "Praesent id enim",
+                }
+            },
+            video: {
+                video: video1,
+                poster: postervideo1
+            }
+        },
         salary: 50,
         category: [{name: "jewelry" , path: "/"}, {name: "children" , path: "/"}]
     },
@@ -3695,33 +4559,6 @@ export const collection_items = [
     },
 ]
 
-// export const review_items = [
-//     {
-//         video: video1,
-//         product: {
-//             name: "title product name title product name",
-//             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-//             rating: 4
-//         }
-//     },
-//     {
-//         video: video1,
-//         product: {
-//             name: "title product name title product name",
-//             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-//             rating: 5
-//         }
-//     },
-//     {
-//         video: video3,
-//         product: {
-//             name: "title product name title product name",
-//             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-//             rating: 3
-//         }
-//     },
-// ]
-
 export const clients_items = [
     {
         photo: clients1
@@ -3914,4 +4751,215 @@ export const tag_items = [
         path: "/",
         tag: "tools"
     },
+]
+
+
+export const user_items = [
+    {
+        Fname: "Ahmed",
+        Lname: "Samy",
+        photo: userphoto1,
+        email: "ahmed0salma.sa@gmail.com",
+        favourite: wishlist_items,
+        cart: [
+            {
+                size: "XL",
+                quantity: 3,
+                color: "grey",
+                product: product_items[0]
+            },
+            {
+                size: "SM",
+                quantity: 3,
+                color: "pink",
+                product: product_items[4]
+            },
+            {
+                size: "M",
+                quantity: 3,
+                color: "blue",
+                product: product_items[2]
+            },
+        ],
+        orders: [
+            {
+                serial: "34VB5540K83",
+                date: "Aug 04, 2020",
+                pending: "in progress",
+                total: 187.65,
+                products: [
+                    {
+                        size: "XL",
+                        quantity: 3,
+                        color: "grey",
+                        product: product_items[0]
+                    },
+                    {
+                        size: "SM",
+                        quantity: 3,
+                        color: "pink",
+                        product: product_items[4]
+                    },
+                    {
+                        size: "M",
+                        quantity: 3,
+                        color: "blue",
+                        product: product_items[2]
+                    },
+                ]
+            },
+            {
+                serial: "34VB5540K83",
+                date: "Aug 04, 2020",
+                pending: "delivered",
+                total: 187.65,
+                products: [
+                    {
+                        size: "XL",
+                        quantity: 3,
+                        color: "grey",
+                        product: product_items[0]
+                    },
+                    {
+                        size: "SM",
+                        quantity: 3,
+                        color: "pink",
+                        product: product_items[4]
+                    },
+                    {
+                        size: "M",
+                        quantity: 3,
+                        color: "blue",
+                        product: product_items[2]
+                    },
+                ]
+            },
+            {
+                serial: "34VB5540K83",
+                date: "Aug 04, 2020",
+                pending: "canceled",
+                total: 187.65,
+                products: [
+                    {
+                        size: "XL",
+                        quantity: 3,
+                        color: "grey",
+                        product: product_items[0]
+                    },
+                    {
+                        size: "SM",
+                        quantity: 3,
+                        color: "pink",
+                        product: product_items[4]
+                    },
+                    {
+                        size: "M",
+                        quantity: 3,
+                        color: "blue",
+                        product: product_items[2]
+                    },
+                ]
+            },
+            {
+                serial: "34VB5540K83",
+                date: "Aug 04, 2020",
+                pending: "delivered",
+                total: 187.65,
+                products: [
+                    {
+                        size: "XL",
+                        quantity: 3,
+                        color: "grey",
+                        product: product_items[0]
+                    },
+                    {
+                        size: "SM",
+                        quantity: 3,
+                        color: "pink",
+                        product: product_items[4]
+                    },
+                    {
+                        size: "M",
+                        quantity: 3,
+                        color: "blue",
+                        product: product_items[2]
+                    },
+                ]
+            },
+            {
+                serial: "34VB5540K83",
+                date: "Aug 04, 2020",
+                pending: "canceled",
+                total: 187.65,
+                products: [
+                    {
+                        size: "XL",
+                        quantity: 3,
+                        color: "grey",
+                        product: product_items[0]
+                    },
+                    {
+                        size: "SM",
+                        quantity: 3,
+                        color: "pink",
+                        product: product_items[4]
+                    },
+                    {
+                        size: "M",
+                        quantity: 3,
+                        color: "blue",
+                        product: product_items[2]
+                    },
+                ]
+            },
+            {
+                serial: "34VB5540K83",
+                date: "Aug 04, 2020",
+                pending: "in progress",
+                total: 187.65,
+                products: [
+                    {
+                        size: "XL",
+                        quantity: 3,
+                        color: "grey",
+                        product: product_items[0]
+                    },
+                    {
+                        size: "SM",
+                        quantity: 3,
+                        color: "pink",
+                        product: product_items[4]
+                    },
+                    {
+                        size: "M",
+                        quantity: 3,
+                        color: "blue",
+                        product: product_items[2]
+                    },
+                ]
+            },
+        ],
+        reviews: [
+            {
+                rating: 4,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[0]
+            },
+            {
+                rating: 3,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[3]
+            },
+            {
+                rating: 5,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[2]
+            },
+            {
+                rating: 1,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[1]
+            },
+        ]
+    }
 ]

@@ -8,10 +8,17 @@ import ProductFiveStars from "./product-fivestars"
 import ProductSalary from "./product-salary"
 import ProductThumbnailButtons from "./product-thumbnail-buttons"
 import PropTypes from "prop-types"
+import ConfigService from "core/config-service"
+import { useSelector } from "react-redux"
+import users from "modules/users/users"
 
 function ProductItem (props) {
-    const {name , photo , sale, rating, salary, newest} = props.item
+    const {pro_name , mainImage , sale, pro_rate, price, newest} = props.item
+    const main_root = ConfigService.config.get("endpoints.url")
     const [modal , setModal] = useState(false)
+    let user_wshl = useSelector(state => state.userReducer.user_wishlist)
+    let user_cart = useSelector(state => state.userReducer.user_cart)
+    let loggedIn = users.isLoggedIn()
 
     // toogle modal by setModal
     const toggleModal = () => setModal(!modal);
@@ -37,9 +44,9 @@ function ProductItem (props) {
                         {newest && <span className="badge badge--right bg--primary--400 text--white">new</span>}
                         {sale?.sale && <span className="badge badge--right bg--secondary--400 text--white">sale</span>}
                     </div>
-                    <ProductThumbnailButtons />
+                    {loggedIn ? (user_wshl && user_cart) && <ProductThumbnailButtons id={props.item.id} item={props.item} /> : <ProductThumbnailButtons id={props.item.id}  item={props.item} />}
                     <Link to="/" className="anchors--reset" onClick={handleClick}>
-                        <img src={photo} alt="product" className="w-100" />
+                        <img src={`${main_root}/${mainImage}`} alt="product" className="w-100" />
                     </Link>
                     <ProductModal item={props.item} show={modal} onHide={toggleModal}/>
                 </Figure>
@@ -47,12 +54,12 @@ function ProductItem (props) {
                 {/*========== item__content ==========*/}
                 <ItemContent>
                     <h4 className="h6">
-                        <Link to="/" className="anchors--reset">
-                            {name}
+                        <Link to={`/shop/product-single/${props.item.id}`} className="anchors--reset">
+                            {pro_name}
                         </Link>
                     </h4>
-                    <ProductFiveStars stars={rating} reviews={12} />
-                    <ProductSalary sale={sale} salary={salary} />
+                    <ProductFiveStars stars={pro_rate} reviews={12} />
+                    <ProductSalary salary={price} />
                 </ItemContent>
                 {/*========== item__content ==========*/}
             </div>

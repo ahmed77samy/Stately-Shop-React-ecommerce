@@ -30,24 +30,34 @@ function SizeGuide () {
                     <p>When comparing your measurements to those listed on the site, make sure to check if the fabric is stretchy or not. If it is, it can stretch an inch or more.</p>
                     <ul className="text--typo m-0 list-unstyled">
                         <li>
-                            <span className="text-capitalize text--black">bust&nbsp;:&nbsp;&nbsp;</span>
-                            Wrap the measuring tape loosely around the fullest part of your bust to ensure a comfortable fit.
+                            <p className="m-0">
+                                <span className="text-capitalize text--black">bust&nbsp;:&nbsp;&nbsp;</span>
+                                Wrap the measuring tape loosely around the fullest part of your bust to ensure a comfortable fit.
+                            </p>
                         </li>
                         <li>
-                            <span className="text-capitalize text--black">Waist&nbsp;:&nbsp;&nbsp;</span>
-                            Measure the narrowest part of your natural waist, holding the measuring tape loose enough to fit comfortably.
+                            <p className="m-0">
+                                <span className="text-capitalize text--black">Waist&nbsp;:&nbsp;&nbsp;</span>
+                                Measure the narrowest part of your natural waist, holding the measuring tape loose enough to fit comfortably.
+                            </p>
                         </li>
                         <li>
-                            <span className="text-capitalize text--black">Hips&nbsp;:&nbsp;&nbsp;</span>
-                            Drape the measuring tape around the widest part of your hips, resting the tape comfortably against your body.
+                            <p className="m-0">
+                                <span className="text-capitalize text--black">Hips&nbsp;:&nbsp;&nbsp;</span>
+                                Drape the measuring tape around the widest part of your hips, resting the tape comfortably against your body.
+                            </p>
                         </li>
                         <li>
-                            <span className="text-capitalize text--black">Length&nbsp;:&nbsp;&nbsp;</span>
-                             For tops and dresses, measure from the top of your shoulder to the hem. For strapless dresses, measure from the highest part of the neckline to the hem. For pants and skirts, measure from the top of the waist to the hem.
+                            <p className="m-0">
+                                <span className="text-capitalize text--black">Length&nbsp;:&nbsp;&nbsp;</span>
+                                For tops and dresses, measure from the top of your shoulder to the hem. For strapless dresses, measure from the highest part of the neckline to the hem. For pants and skirts, measure from the top of the waist to the hem.
+                            </p>
                         </li>
                         <li>
-                            <span className="text-capitalize text--black">Sleeve&nbsp;:&nbsp;&nbsp;</span>
-                            With your arm outstretched, measure from the base of your neck to the end of the sleeve hem to determine where the sleeve length will fall on you.
+                            <p className="m-0">
+                                <span className="text-capitalize text--black">Sleeve&nbsp;:&nbsp;&nbsp;</span>
+                                With your arm outstretched, measure from the base of your neck to the end of the sleeve hem to determine where the sleeve length will fall on you.
+                            </p>
                         </li>
                     </ul>
                 </Col>

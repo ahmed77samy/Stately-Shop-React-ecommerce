@@ -1,4 +1,3 @@
-
 const HeaderItems = [
     {
         route: "/demo1",
@@ -31,7 +30,7 @@ const HeaderItems = [
                 content: "banner with sidebar"
             },
             {
-                route: "/shop/product-single",
+                route: "/shop/product-single/1",
                 content: "product single"
             }
         ]
@@ -45,10 +44,15 @@ const HeaderItems = [
                 content: "my account"
             },
             {
+                route: "/user",
+                content: "user"
+            },
+            {
                 route: "/404",
                 content: "404"
-            },
+            }
         ]
     },
 ]
+
 export default HeaderItems

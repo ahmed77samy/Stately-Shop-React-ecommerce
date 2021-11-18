@@ -11,7 +11,6 @@ import { Form } from "react-bootstrap"
 import PropTypes from 'prop-types';
 
 function FormLogin (props) {
-    
     const [errors , setErrors] = useState({})
     const [waitreq , setWaitreq] = useState(false)
     
@@ -22,7 +21,7 @@ function FormLogin (props) {
 
     // schema validation with yup shape
     let LoginSchema = Yup.object().shape(Users.LoginSchema)
-
+    
     /**
      * send request login to api and handle actions
      * set the wait request to do actions with button
@@ -35,7 +34,12 @@ function FormLogin (props) {
             let data = await UserApi.login(values)
             setWaitreq(false)
             if(data.status === 200) {
-                Users.login(data.data.access_token)
+                Users.login(data.data)
+                if(window.location.pathname === "/user/account") {
+                    window.location.replace("/user")
+                } else {
+                    window.location.reload()
+                }
             }
         } catch ({response}) {
             setWaitreq(false)

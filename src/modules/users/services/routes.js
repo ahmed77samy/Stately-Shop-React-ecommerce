@@ -7,8 +7,8 @@ import User from "../components/user";
  * middleware checked on logged In
  * @returns {Function}
  */
-async function isLoggedIn() {
-    let status = await user.isLoggedIn()
+function isLoggedIn() {
+    let status = user.isLoggedIn()
     return status === true && function () {NavigateTo("/user")}
 }
 
@@ -16,8 +16,8 @@ async function isLoggedIn() {
  * middleware checked on logged Out
  * @returns {Function}
  */
-async function isLoggedOut() {
-    let status = await user.isLoggedIn()
+function isLoggedOut() {
+    let status = user.isLoggedIn()
     return status !== true && function () {NavigateTo("/user/account")}
 }
 
@@ -29,4 +29,5 @@ async function isLoggedOut() {
 export default function userRoutes (route) {
     route("/user/account" , MyAccount, [isLoggedIn]);
     route("/user" , User, [isLoggedOut]);
+    route("/user/:Key" , User, [isLoggedOut]);
 }

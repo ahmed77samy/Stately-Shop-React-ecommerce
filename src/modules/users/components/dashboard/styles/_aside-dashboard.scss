@@ -1,0 +1,44 @@
+.aside__dashboard {
+    box-shadow: var(--shadow-m);
+    /*========== aside__interface ==========*/
+    .aside__interface {
+        padding: 25px $aside-padding;
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+    }
+    /*========== aside__interface ==========*/
+    /*========== aside__menu ==========*/
+    .aside__menu {
+        display: none;
+        &.active {
+            display: block;
+        }
+        .menu__item{
+            display: flex;
+            justify-content: space-between;
+            padding: 18px $aside-padding;
+            border-radius: 0;
+            background: none;
+            border-bottom: 1px solid rgba(var(--c-neutral-100), $alpha);
+            span {
+                color: $text-typo;
+                font-weight: 500;
+                transition: .3s;
+            }
+            &:hover,&.active {
+                span {
+                    color: rgba(var(--c-primary-500), $alpha);
+                }
+            }
+            &:last-of-type {
+                border: none;
+            }
+        }
+    }
+    /*========== aside__menu ==========*/
+}

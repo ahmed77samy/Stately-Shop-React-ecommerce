@@ -35,15 +35,13 @@ function ProductFiveStars (props) {
                     </div>
                 </OverlayTrigger>
                 {/*========== OverlayTrigger ==========*/}
-                {/**
-                 * check if reviews is exists
-                 */}
                 {
-                    reviews && (
+                    // check if reviews is exists
+                    reviews && reviews !== 0 ? (
                         <span className="font--size--small">
                             (&nbsp;&nbsp;{reviews} Reviews&nbsp;&nbsp;)
                         </span>
-                    )
+                    ) : ""
                 }
             </div>
         
@@ -51,7 +49,7 @@ function ProductFiveStars (props) {
 }
 
 ProductFiveStars.propTypes = {
-    stars: PropTypes.number.isRequired,
+    stars: PropTypes.any.isRequired,
     reviews: PropTypes.number
 }
 

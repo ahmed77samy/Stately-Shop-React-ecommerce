@@ -4,8 +4,8 @@ import Logo from "../elements/logo";
 import Nav from "./nav"
 import NavBar from "./nav-bar"
 import User from "./user"
-import "./styles/header.scss"
 import { Col, Container, Row } from "react-bootstrap"
+import "./styles/header.scss"
 
 function Header () {
     let header = useRef(0)

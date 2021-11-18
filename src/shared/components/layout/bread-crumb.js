@@ -20,7 +20,7 @@ function BreadCrumb (props) {
      * {@inheritdoc}
      */
     return (
-        <div className="bread__crumb">
+        <div {...props} className={`bread__crumb ${props.className}`}>
             <Container>
                 <Breadcrumb>
                     {itemList}
@@ -32,7 +32,7 @@ function BreadCrumb (props) {
 
 BreadCrumb.propTypes = {
     el: PropTypes.arrayOf(PropTypes.shape({
-        content: PropTypes.string.isRequired,
+        content: PropTypes.string,
         route: PropTypes.string.isRequired,
         icon: PropTypes.func,
         props: PropTypes.object,

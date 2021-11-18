@@ -3,12 +3,16 @@
         margin-bottom: 30px;
     }
     ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
         li{
             color: rgba(var(--c-neutral-400) , $alpha);
             label {
                 text-transform: uppercase;
                 margin-right: 20px;
                 color: rgba(var(--c-white) , $alpha);
+                margin-bottom: 0;
             }
             a {
                 text-transform: uppercase;

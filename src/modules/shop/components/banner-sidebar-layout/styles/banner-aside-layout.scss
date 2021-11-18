@@ -1,10 +1,5 @@
 @import "assets/styles/helpers";
 
-.header__modal {
-    @import "./aside-filter";
-}
-
-.banner__sidebar__layout{
-    @import "./aside-filter";
+.banner__sidebar__layout {
     @import "./layout-content";
 }

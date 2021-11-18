@@ -1,23 +1,45 @@
-import { Col, Container, Row } from "react-bootstrap"
-import AsideFilter from "./aside-filter"
+import { Container } from "react-bootstrap"
+import { CartIcon, HomeIcon } from "shared/components/elements/icons"
+import BreadCrumb from "shared/components/layout/bread-crumb"
 import LayoutContent from "./layout-content"
 import "./styles/banner-aside-layout.scss"
 
-function BannerSidebarLayout () {
+function BannerSidebarLayout (props) {
+    // items BreadCrumb
+    const elBreadCrumb = [
+        {
+            content: "home",
+            icon: HomeIcon,
+            route: "/demo1",
+        },
+        {
+            content: "shop",
+            icon: CartIcon,
+            route: "/shop",
+        },
+        {
+            content: "banner sidebar",
+            route: "/shop/banner-sidebar",
+            props: {active: true}
+        },
+    ]
+
+    if(props.key_search) {
+        elBreadCrumb.push({
+            content: props.key_search,
+            route: `/shop/banner-sidebar/${props.key_search}`,
+            props: {active: true}
+        })
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     return(
         <section className="com--pd banner__sidebar__layout">
             <Container>
-                <Row className="layout--space">
-                    <Col lg={3} className="d-none d-lg-block">
-                        <AsideFilter />
-                    </Col>
-                    <Col xs={12} lg={9}>
-                        <LayoutContent />
-                    </Col>
-                    <Col xs={12} lg={{span: 8 , offset: 4}}>
-                        <button to="/" className="mx-auto btn--reset btn__default btn--primary">show more</button>
-                    </Col>
-                </Row>
+                <BreadCrumb el={elBreadCrumb} />
+                <LayoutContent key_search={props.key_search} />
             </Container>
         </section>
     )

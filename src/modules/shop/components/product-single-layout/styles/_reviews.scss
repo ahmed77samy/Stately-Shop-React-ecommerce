@@ -22,13 +22,12 @@
             .item__header {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
                 align-items: flex-end;
                 h5 {
                     font-weight: 600;
                     transition: .3s;
                     &:hover {
-                        color: rgba(var(--c-primary-700), $alpha);
+                        color: rgba(var(--c-primary-500), $alpha);
                     }
                 }
             }
@@ -48,16 +47,21 @@
     form {
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 40px;
         .form-group {
+            position: relative;
             &.rating {
                 display: flex;
                 align-items: center;
                 column-gap: 5px;
             }
-            & > label {
-                text-transform: uppercase;
-                font-weight: 600;
+            span.filed__error {
+                position: absolute;
+                top: 0;
+                left: 15px;
+                transform: translateY(-50%);
+                background: rgba(var(--c-white) , $alpha);
+                padding: 0 10px;
             }
             textarea {
                 width: 100%;

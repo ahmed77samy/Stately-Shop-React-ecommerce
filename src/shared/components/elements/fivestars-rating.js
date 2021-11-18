@@ -1,9 +1,20 @@
+import { Field } from "formik"
+import { useRef } from "react"
+import { useEffect } from "react"
 import { Form } from "react-bootstrap"
 import { StarIcon } from "./icons"
 import "./styles/fivestars-rating.scss"
 
 function FiveStarsRating (props) {
+    const input_FS_Ref = useRef(null);
     const {propsformik} = props
+
+    // reset the five star input after submiting
+    useEffect(() => {
+        if(propsformik.isSubmitting) {
+            input_FS_Ref.current.querySelectorAll(".form-check").forEach((e) => e.classList.remove("active"))
+        }
+    },[propsformik.isSubmitting])
 
     /**
      * handle click rating buttons and (add , remove) classes active
@@ -30,14 +41,15 @@ function FiveStarsRating (props) {
      * {@inheritdoc}
      */
     return (
-        <div className="fivestars__rating">
+        <div className="fivestars__rating" ref={input_FS_Ref}>
             {[1,2,3,4,5].map((item,index) => {
                 return (
-                    <Form.Check
+                    <Field
                         key={index}
+                        as={Form.Check}
                         type="radio"
-                        label={<StarIcon />}
-                        name="rating"
+                        label={<StarIcon className="icon" />}
+                        name="re_rate"
                         value={item}
                         onChange={propsformik.handleChange}
                         id={`product-single-reviews-rating-${item}`}
@@ -45,6 +57,7 @@ function FiveStarsRating (props) {
                     />
                 )
             })}
+            {propsformik.touched.re_rate &&  propsformik.errors?.re_rate && <span className="m-0 text-danger text-capitalize">&nbsp;&nbsp;&nbsp;{propsformik.errors?.re_rate}</span>}
         </div>
     )
 }

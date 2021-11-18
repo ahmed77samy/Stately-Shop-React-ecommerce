@@ -1,0 +1,78 @@
+.orders {
+    .order__item {
+        /*========== order__header ==========*/
+        .order__header {
+            background: rgba(var(--c-neutral-100), $alpha);
+            border: 1px solid rgba(var(--c-neutral-200), $alpha);
+            button {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 0;
+                background: transparent;
+                width: 100%;
+                padding: 20px 15px;
+                flex-wrap: wrap;
+                row-gap: 10px;
+                & > * {
+                    pointer-events: none;
+                }
+                &.progressed {
+                    --c-primary-100: 224,231,255;
+                    --c-primary-400: 129,140,248;
+                }
+                &.delivered{
+                    --c-primary-100: 217,255,237;
+                    --c-primary-400: 22,201,149;
+                }
+                &.canceled{
+                    --c-primary-100: 255,234,239;
+                    --c-primary-400: 247,79,120;
+                }
+                span {
+                    font-weight: 500;
+                    margin: 0 5px;
+                    &.badge {
+                        font-size: 90%;
+                    }
+                }
+            }
+        }
+        /*========== order__header ==========*/
+        /*========== order__content ==========*/
+        .order__content {
+            display: none;
+            flex-direction: column;
+            row-gap: 25px;
+            border: 1px solid rgba(var(--c-neutral-200), $alpha);
+            border-top: none;
+            padding: 30px 15px;
+            label {
+                font-weight: 500;
+                color: rgba(var(--c-neutral-500), $alpha);
+            }
+            span {
+                color: $text-typo;
+                font-weight: 400;
+            }
+            .cost {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                row-gap: 10px;
+                @include md {
+                    flex-direction: row;
+                }
+            }
+            @import "./product-item";
+        }
+        /*========== order__content ==========*/
+        /*========== order active ==========*/
+        &.active {
+            .order__content {
+                display: flex;
+            }
+        }
+        /*========== order active ==========*/
+    }
+}

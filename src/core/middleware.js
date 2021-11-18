@@ -1,36 +1,32 @@
 import React from "react";
+import user from "modules/users/users"
 
-class Middleware extends React.Component {
-        
-    // state = {loading : true}
-    
+class Middleware extends React.Component {    
     componentDidMount() {
-        let {history, route} = this.props
-
-        // check on middleware if return th value
-        if(route.middleware) {
-            for (const middleware of route.middleware) {
-                (async () => {
-                    let output = await middleware(history, route);
+        user.refresh()
+        .then(() => {
+            let {history, route} = this.props
+            // check on middleware if return the value
+            if(route.middleware) {
+                for (const middleware of route.middleware) {
+                    let output = middleware(history, route);
                     if (output !== false) {
-                        // this.setState({loading: false})
                         return output();
-                    }else {
-                        // this.setState({loading: false})
+                    } else {
+                        return this.forceUpdate()
                     }
-                })()
+                }
             }
-        } else {
-            // this.setState({loading: false})
-        }
+            return this.forceUpdate()
+        })
     }
 
 
     render() {
-        let {history, route} = this.props
+        let {history, route, props} = this.props
         // scroll to the top page when navigating to new page
         window.scrollTo(0, 0);
-        return <route.component history={history} />
+        return <route.component history={history} props={props} />;
     }
     
 }

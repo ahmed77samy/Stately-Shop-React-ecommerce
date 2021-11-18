@@ -5,8 +5,11 @@ import PropTypes from "prop-types"
 import Description from "./description"
 import ShippingAndReturn from "./shipping-and-return"
 import Reviews from "./reviews"
+import users from "modules/users/users"
+import { Link } from "react-router-dom"
 
 function ProductTab (props) {
+    let loggedIn = users.isLoggedIn();
     const { item } = props
     /**
      * {@inheritdoc}
@@ -18,7 +21,7 @@ function ProductTab (props) {
                     <Description item={item} />
                 </Tab>
                 <Tab eventKey="reviews" title="reviews" tabClassName="anchors--reset text--neutral--400 text-capitalize">
-                    <Reviews item={item} />
+                    {loggedIn ? <Reviews item={item} id={props.id} /> : <h6 className="text-capitalize text-center">Please <Link to="/user/account">login</Link> to be able to share reviews</h6>}
                 </Tab>
                 <Tab eventKey="size-guide" title="size guide" tabClassName="anchors--reset text--neutral--400 text-capitalize">
                     <SizeGuide />

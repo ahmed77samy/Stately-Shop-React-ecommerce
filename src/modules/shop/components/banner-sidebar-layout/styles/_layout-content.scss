@@ -26,6 +26,14 @@
             .product__item {
                 @import "../../products/styles/product-item";
             }
+            .product__item__list {
+                @import "../../products/styles/product-item-list";
+                @include md {
+                    display: flex;
+                    column-gap: 30px;
+                    align-items: center;
+                }
+            }
             &:hover {
                 box-shadow: var(--shadow-m);
                 .product__item {

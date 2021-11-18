@@ -2,19 +2,32 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import SwiperCore , {Navigation} from "swiper"
 import {AngleLeftIcon , AngleRightIcon} from "shared/components/elements/icons"
 import { useRef } from "react"
-import { product_items } from "items"
+import { useEffect } from "react"
 import ProductItem from "./product-item"
 import "./styles/product-related.scss"
+import shop from "modules/shop/shop"
+import { useSelector } from "react-redux"
+import BorderLoading from "shared/components/elements/border-loading"
 
 SwiperCore.use([Navigation])
 
 function ProductRelated () {
+    const products = useSelector(state => state.shopReducer.products)
     let limited = 8
     let navigationPrevRef = useRef(0)
     let navigationNextRef = useRef(0)
 
+    // fetch the products from ShopAPI 
+    useEffect(() => {
+        let isMounted = true
+        if(isMounted) {
+            shop.getProducts()
+        }
+        return () => isMounted = false;
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
+
     // map for productHeader to create productItem
-    const itemList = product_items.map((item , index) => {
+    const itemList = products?.map((item , index) => {
         return index < limited && (
             <SwiperSlide key={index}>
                 <ProductItem item={item} />
@@ -64,14 +77,21 @@ function ProductRelated () {
                     })
                 }}
             >
-                {itemList}
+                {/* {itemList} */}
+                {
+                    // check products to previews
+                    products === null ? <div className="text-center"><BorderLoading /></div> :
+                    products === undefined ? <h4 className="text--typo text-center">No Products Found !</h4> :
+                    products && itemList
+                }
+                
             </Swiper>
             {/*========== product__control ==========*/}
             <div className="product__control center-block">
-                <button className="btn--reset btn__icon prev" ref={navigationPrevRef}>
+                <button className="btn--reset btn__icon btn--primary prev" ref={navigationPrevRef}>
                     <AngleLeftIcon className="icon" />
                 </button>
-                <button className="btn--reset btn__icon next" ref={navigationNextRef}>
+                <button className="btn--reset btn__icon btn--primary next" ref={navigationNextRef}>
                     <AngleRightIcon className="icon" />
                 </button>
             </div>

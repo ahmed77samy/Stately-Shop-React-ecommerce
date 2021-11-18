@@ -35,3 +35,8 @@ export const MinusIcon = (props) => <i {...props} className={`fal fa-minus ${pro
 export const CompareIcon = (props) => <i {...props} className={`fal fa-balance-scale-right ${props.className}`}></i>;
 export const ClockIcon = (props) => <i {...props} className={`fal fa-clock ${props.className}`}></i>;
 export const PlayIcon = (props) => <i {...props} className={`fal fa-play ${props.className}`}></i>;
+export const CommentIcon = (props) => <i {...props} className={`fal fa-comments ${props.className}`}></i>;
+export const OrdersIcon = (props) => <i {...props} className={`fal fa-shopping-bag ${props.className}`}></i>;
+
+
+export const TrashIcon = (props) => <i {...props} className={`fal fa-trash ${props.className}`}></i>;

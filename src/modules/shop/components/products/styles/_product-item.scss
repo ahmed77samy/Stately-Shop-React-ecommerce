@@ -53,6 +53,7 @@ figure {
         font-weight: 400;
         margin: 0;
         transition: .3s;
+        font-weight: 600;
         &:hover {
             color: rgba( var(--c-primary-500) ,$alpha);
         }

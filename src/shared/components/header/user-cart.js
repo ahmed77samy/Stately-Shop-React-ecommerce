@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import HeaderModal from "../modals/header-modal";
 import { Modal } from "react-bootstrap";
 
-function UserCart () {
+function UserCart (props) {
     const [modal , setModal] = useState(false)
 
     // toogle modal by setModal
@@ -17,7 +17,13 @@ function UserCart () {
         <div className="user__cart">
             <div className="wrapper__badge">
                 <CartIcon className="icon" onClick={toggleModal} />
-                <span className="font--size--small badge__number bg--black text-white">1</span>
+                <span className="font--size--small badge__number bg--black text-white">
+                    {
+                        // check user_wshl to previews
+                        props.user_cart === undefined ? 0 :
+                        props.user_cart && props.user_cart?.length
+                    }
+                </span>
             </div>
             {/*========== HeaderModal ==========*/}
             <HeaderModal className="modal--right" show={modal} onHide={toggleModal} animation={false}>
