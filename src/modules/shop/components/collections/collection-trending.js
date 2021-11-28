@@ -5,6 +5,7 @@ import CollectionItem from "./collection-item";
 import { useEffect } from "react";
 import "./styles/collection-trending.scss"
 import shop from "modules/shop/shop";
+import BorderLoading from "shared/components/elements/border-loading";
 
 function CollectionTrending() {
     let limited = 4;
@@ -44,7 +45,12 @@ function CollectionTrending() {
                 {/*========== sec__content ==========*/}
                 <div className="sec__content">
                     <Row className="layout--space">
-                        {itemList}
+                        {
+                            // check collections to previews
+                            collections === null ? <BorderLoading /> :
+                            collections === undefined ? <Col xs={12}><h6 className="text-danger text-center m-0">No Collections Found !</h6></Col> :
+                            collections && itemList
+                        }
                     </Row>
                 </div>
                 {/*========== sec__content ==========*/}

@@ -38,7 +38,7 @@ function ProductViewForm (props) {
             .then((data) => {
                 setWaitreq(false)
                 shop.addToCart(data.data.payload)
-                actions.resetForm({values: {size_id: defaultsize, color_id: defaultcolor, quantity: 0}})
+                actions.resetForm({values: {size_id: defaultsize, color_id: defaultcolor, quantity: 1}})
                 document.querySelector("header .user__cart .icon").click()
             })
             .catch(({response}) => {
@@ -66,7 +66,7 @@ function ProductViewForm (props) {
     }
 
     return (
-        <MyForm onSubmit={handleSubmit} initialValues={{size_id: "", color_id: "", quantity: 0}} validationSchema={CartSchema}>
+        <MyForm onSubmit={handleSubmit} initialValues={{size_id: "", color_id: "", quantity: 1}} validationSchema={CartSchema}>
             <FormSizes item={props.item} onreset={resetSize} />
             <FormColors item={props.item} onreset={resetColor} />
             <FormActions item={props.item} waitreq={waitreq} />

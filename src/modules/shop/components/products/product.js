@@ -5,8 +5,8 @@ import SecHeader from "shared/components/layout/sec-header"
 import ProductItem from "./product-item"
 import { useSelector } from "react-redux"
 import BorderLoading from "shared/components/elements/border-loading"
-import "./styles/product.scss"
 import shop from "modules/shop/shop"
+import "./styles/product.scss"
 
 function Product () {
     let limited = 8
@@ -50,7 +50,7 @@ function Product () {
                         {
                             // check products to previews
                             products === null ? <BorderLoading /> :
-                            products === undefined ? <Col xs={12}><h2 className="text--typo">No Products Found !</h2></Col> :
+                            products === undefined ? <Col xs={12}><h6 className="text-danger m-0">No Products Found !</h6></Col> :
                             products && itemList
                         }
                         {

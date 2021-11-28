@@ -16,22 +16,26 @@ function ProductThumbnailButtons (props) {
 
     // check if the given product is exits in wishlist
     useEffect(() => {
-        if(loggedIn) {
-            const status = user_wshl.some((item , index) => {
-                return item.product_id === props.id
+        let isMounted = true
+        if(isMounted && loggedIn) {
+            const status = user_wshl?.some((item , index) => {
+                return +item.product_id === +props.id
             })
             setWishlistStatus(status)
         }
+        return () => isMounted = false;
     },[user_wshl, props.id, loggedIn])
     
     // check if the given product is exits in cart
     useEffect(() => {
-        if(loggedIn) {
-            const status = user_cart.some((item , index) => {
+        let isMounted = true
+        if(isMounted && loggedIn) {
+            const status = user_cart?.some((item , index) => {
                 return +item.product_id === +props.id
             })
             setCartStatus(status)
         }
+        return () => isMounted = false;
     },[user_cart, props.id, loggedIn])
 
     // toogle modal by setModal

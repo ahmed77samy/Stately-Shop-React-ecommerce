@@ -96,11 +96,11 @@ function ProductSearch (props) {
                 {
                     // check products to previews
                     productssearch === null ? <Col xs={12} className="text-center"><BorderLoading /></Col> :
-                    (productssearch === undefined || productssearch.length === 0) ? <Col xs={12}><h2 className="text-center text--typo">No Products Found !</h2></Col> :
+                    (productssearch === undefined || productssearch.length === 0) ? <Col xs={12}><h6 className="text-center text-danger">No Products Found !</h6></Col> :
                     productssearch && searchItemsList
                 }
             </Row>
-            {productssearch && productssearch.length > 0 && <button to="/" className="mx-auto mt-5 btn--reset btn__default btn--primary" onClick={handleClick}>show more</button>}
+            {productssearch && productssearch.length > 0 && limit < productssearch.length && <button to="/" className="mx-auto mt-5 btn--reset btn__default btn--primary" onClick={handleClick}>show more</button>}
         </div>
     )
 }

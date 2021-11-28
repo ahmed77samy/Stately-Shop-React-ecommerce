@@ -2,7 +2,6 @@ import { Col, Row } from "react-bootstrap"
 import Figure from "../layout/figure"
 import ItemContent from "../layout/item-content"
 import PropTypes from "prop-types"
-import { Link } from "react-router-dom"
 import { TimesIcon } from "shared/components/elements/icons"
 import ProductFiveStars from "modules/shop/components/products/product-fivestars"
 import ProductSalary from "modules/shop/components/products/product-salary"
@@ -32,11 +31,7 @@ function ProductModalItem(props) {
                 <Col xs={12} lg={6}>
                     <TimesIcon onClick={props.toggleModal} className="icon icon__close d-none d-lg-block" />
                     <ItemContent>
-                        <h4 className="h5 text-capitalize m-0">
-                            <Link to="/" className="anchors--reset">
-                                {pro_name}
-                            </Link>
-                        </h4>
+                        <h4 className="h5 text-capitalize m-0">{pro_name}</h4>
                         <div className="d-flex align-self-stretch">
                             <ProductSalary sale={sale} salary={price} className="mr-3" />
                             <ProductFiveStars stars={pro_rate} reviews={12} />

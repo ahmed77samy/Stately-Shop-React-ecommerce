@@ -24,7 +24,7 @@ function NavBar() {
      * {@inheritdoc}
      */
     return (
-        <div className="header__navbar">
+        <div className="user__navbar d-lg-none">
             {/*========== wrapper__badge ==========*/}
             <div className="wrapper__badge">
                 <BarsIcon className="icon" onClick={toggleModal} />

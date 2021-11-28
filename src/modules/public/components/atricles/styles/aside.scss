@@ -1,0 +1,46 @@
+@import "assets/styles/helpers";
+
+#Article__page {
+    aside {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        /*========== aside__group ==========*/
+        .aside__group {
+            .aside__content {
+                padding: 0;
+                .aside__item {
+                    padding: $aside-padding;
+                    /*========== group__info ==========*/
+                    .group__info {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 10px;
+                        figure {
+                            flex-shrink: 0;
+                            border-radius: 50%;
+                            border: 2px solid rgba(var(--c-neutral-300), $alpha);
+                            img {
+                                width: 40px;
+                                height: 40px;
+                                object-fit: cover;
+                            }
+                        }
+                        h6 {
+                            transition: .3s;
+                            color: rgba(var(--c-neutral-600), $alpha);
+                            &:hover {
+                                color: rgba(var(--c-primary-500), $alpha);
+                            }
+                            .description {
+                                @include lineclamp(1)
+                            }
+                        }
+                    }
+                    /*========== group__info ==========*/
+                }
+            }
+        }
+        /*========== aside__group ==========*/
+    }
+}

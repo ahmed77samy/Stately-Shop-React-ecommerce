@@ -2,7 +2,6 @@ import { useRef } from "react"
 import { useEffect } from "react"
 import Logo from "../elements/logo";
 import Nav from "./nav"
-import NavBar from "./nav-bar"
 import User from "./user"
 import { Col, Container, Row } from "react-bootstrap"
 import "./styles/header.scss"
@@ -37,9 +36,9 @@ function Header () {
     return(
         <header ref={header}>
             <Container>
-                <Row>
+                <Row className="justify-content-between">
                     {/*========== header__logo ==========*/}
-                    <Col xs={6} lg={2} className="d-flex align-items-center justify-content-start">
+                    <Col xs="auto" lg={2} className="d-flex align-items-center justify-content-start">
                         <Logo />
                     </Col>
                     {/*========== header__nav ==========*/}
@@ -47,12 +46,8 @@ function Header () {
                         <Nav />
                     </Col>
                     {/*========== header__user ==========*/}
-                    <Col xs={2} className="d-none d-lg-flex align-items-center justify-content-end">
+                    <Col xs="auto" lg={2} className="d-flex align-items-center justify-content-end">
                         <User />
-                    </Col>
-                    {/*========== header__bar ==========*/}
-                    <Col xs={6} className="d-lg-none">
-                        <NavBar />
                     </Col>
                 </Row>
             </Container>

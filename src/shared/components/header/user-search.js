@@ -1,41 +1,50 @@
-import { useState , useRef } from 'react';
-import { product_items } from 'items';
+import { useState } from 'react';
+import ShopApi from "modules/shop/services/api"
 import ResultItem from './result-item';
 import { Link } from 'react-router-dom';
-import { TimesIcon , ChevronRightLongIcon , SearchIcon } from '../elements/icons';
+import { TimesIcon , SearchIcon } from '../elements/icons';
 import { Modal } from 'react-bootstrap';
 import HeaderModal from '../modals/header-modal';
+import MyButton from '../elements/button';
 
 function UserSearch () {
-    const [searchResult, setSearchResult] = useState([])
-    const [searchEmpty, setSearchEmpty] = useState(true)
-    const buttonSearchRef = useRef(0)
+    const [searchResult, setSearchResult] = useState(null)
+    const [keyword, setKeyword] = useState("")
     const [modal , setModal] = useState(false)
-    const limited = 10
+    const [waitreq , setWaitreq] = useState(false)
+    const limited = 5
 
     /**
-     * handle search button on change
-     * check if value empty to do action
-     * set state for search result
+     * set state for keyword
      * @param {event} e 
      * @returns {function}
      */
-    function handleSearch(e) {
-        let value = e.target.value.toLowerCase();
-        setSearchEmpty(false)
-        if(value === "") {
-            setSearchEmpty(true)
-            return setSearchResult([])
+    const handleKeyword = (e) => {
+        let value = e.target.value;
+        setKeyword(value)
+    }
+
+    const handleSearch = (e) => {
+        e.preventDefault()
+        if(keyword.length > 0) {
+            setWaitreq(true)
+            ShopApi.searchProduct(keyword)
+            .then(({data}) => {
+                setSearchResult(data.payload)
+                setWaitreq(false)
+            })
+            .catch(() => {
+                setSearchResult(undefined)
+                setWaitreq(false)
+            })
         }
-        const filter = product_items.filter((item) => item.name.toLowerCase().includes(value))
-        setSearchResult(filter)
     }
 
     // toogle modal by setModal
     const toggleModal = () => setModal(!modal);
     
     // map for searchResult to create result item
-    const resultList = searchResult.map((item , index) => {
+    const resultList = searchResult?.map((item , index) => {
         return index < limited && (
             <ResultItem key={index} item={item} />
         )
@@ -53,16 +62,29 @@ function UserSearch () {
             {/*========== wrapper__badge ==========*/}
             {/*========== HeaderModal ==========*/}
             <HeaderModal className="modal--right" show={modal} onHide={toggleModal} animation={false}>
+                {/*========== Modal.Header ==========*/}
                 <Modal.Header className="dark--mode">
                     <Modal.Title><h3 className="h6 m-0 text-uppercase">search our site</h3></Modal.Title>
                     <TimesIcon onClick={toggleModal} className="icon" />
                 </Modal.Header>
+                {/*========== Modal.Header ==========*/}
+                {/*========== modal__fragment ==========*/}
                 <div className="modal__fragment">
-                    <input type="text" placeholder="Search For Product" className="input__default input--border" ref={buttonSearchRef} onChange={handleSearch} />
+                    <form className="d-flex flex-wrap" onSubmit={handleSearch}>
+                        <input type="text" placeholder="Search For Product" className="input__default input--border" onChange={handleKeyword} />
+                        <MyButton type="submit" waitrequest={`${waitreq}`} value={<SearchIcon className="icon" />} className={`btn__default btn--dark ${waitreq && 'disabled'}`} />
+                    </form>
+                    {searchResult && searchResult.length > 0 && (
+                        <Link to={`/shop/banner-sidebar/${keyword}`} className="text-uppercase anchors--reset d-inline-flex align-items-center mt-4">
+                            view all items {`(${searchResult.length})`}
+                        </Link>
+                    )}
                 </div>
+                {/*========== modal__fragment ==========*/}
+                {/*========== Modal.Body ==========*/}
                 <Modal.Body>
                     <div className="body__result">
-                        {
+                        {/* {
                             !searchEmpty && (resultList.length > 0 ?
                             (
                                 <>
@@ -75,9 +97,16 @@ function UserSearch () {
                                 </>
                             ) : 
                             <p className="m-0 text-uppercase">no products.</p>)
+                        } */}
+                        {
+                            // check user_wshl to previews
+                            searchResult === undefined ? <p className="text-danger">An unexpected error occurred. Please try again soon</p> :
+                            searchResult?.length === 0 ? <p>No Products Founded !</p> :
+                            searchResult && resultList
                         }
                     </div>
                 </Modal.Body>
+                {/*========== Modal.Body ==========*/}
             </HeaderModal>
             {/*========== HeaderModal ==========*/}
         </div>

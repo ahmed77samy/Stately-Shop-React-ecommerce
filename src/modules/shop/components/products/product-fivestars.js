@@ -30,7 +30,7 @@ function ProductFiveStars (props) {
                         </Tooltip>
                     }
                 >
-                    <div className="d-inline">
+                    <div className="d-inline testttt">
                         {starList}&nbsp;&nbsp;
                     </div>
                 </OverlayTrigger>

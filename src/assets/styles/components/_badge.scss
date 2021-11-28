@@ -26,6 +26,9 @@
     &.checked {
         background: rgba(var(--c-primary-400) , $alpha);
         color: rgba(var(--c-white) , $alpha) !important;
+        &:hover {
+            background: rgba(var(--c-primary-500) , $alpha);
+        }
     }
 }
 

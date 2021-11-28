@@ -4,7 +4,7 @@
     font-size: 1rem;
     span.salary {
         font-size: 1em;
-        font-weight: bold;
+        font-weight: 500;
         color: rgba(var(--c-primary-500) , $alpha);
         &.salary--sale {
             position: relative;
@@ -25,7 +25,7 @@
     span.sale {
         font-size: 1em;
         margin-right: 7px;
+        font-weight: 500;
         color: rgba(var(--c-primary-500) , $alpha);
-        font-weight: bold;
     }
 }

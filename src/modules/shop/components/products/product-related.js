@@ -77,14 +77,12 @@ function ProductRelated () {
                     })
                 }}
             >
-                {/* {itemList} */}
                 {
                     // check products to previews
                     products === null ? <div className="text-center"><BorderLoading /></div> :
                     products === undefined ? <h4 className="text--typo text-center">No Products Found !</h4> :
                     products && itemList
                 }
-                
             </Swiper>
             {/*========== product__control ==========*/}
             <div className="product__control center-block">

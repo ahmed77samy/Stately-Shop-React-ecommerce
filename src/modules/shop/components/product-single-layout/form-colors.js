@@ -13,7 +13,9 @@ function FormColors (props) {
     // reset color if isSubmitting
     useEffect(() => {
         if(propsformik.isSubmitting) {
-            colorRef.current?.querySelector("#product-single-form-color-default")?.click()
+            setTimeout(() => {
+                colorRef.current?.querySelector("#product-single-form-color-default")?.click()
+            });
         }
     },[propsformik.isSubmitting])
 
@@ -42,7 +44,7 @@ function FormColors (props) {
     useEffect(() => {
         let isMounted = true;
         setColors(null)
-        ShopApi.showColors(item.id)
+        ShopApi.showColors(item.product_id || item.id)
         .then(data => {
             if(isMounted){
                 if(data.data.payload.length > 0) {

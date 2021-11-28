@@ -22,6 +22,10 @@ const HeaderItems = [
         ]
     },
     {
+        route: "/about-us",
+        content: "about us"
+    },
+    {
         route: "/shop",
         content: "shop",
         items: [
@@ -40,8 +44,44 @@ const HeaderItems = [
         ]
     },
     {
-        route: "/user",
+        route: "/article-grid",
+        content: "blog",
+        items: [
+            {
+                route: "/article-grid",
+                content: "blog grid"
+            },
+            {
+                route: "/article-list",
+                content: "blog list"
+            },
+            {
+                route: "/article-single",
+                content: "blog single"
+            }
+        ]
+    },
+    {
+        route: "/shop",
         content: "pages",
+        items: [
+            {
+                route: "/shop/product-single/1",
+                content: "faq's"
+            },
+            {
+                route: "/shop/product-single/1",
+                content: "terms"
+            },
+            {
+                route: "/404",
+                content: "404"
+            }
+        ]
+    },
+    {
+        route: "/user",
+        content: "user",
         items: [
             {
                 route: "/user/account",
@@ -50,12 +90,12 @@ const HeaderItems = [
             {
                 route: "/user",
                 content: "user"
-            },
-            {
-                route: "/404",
-                content: "404"
             }
         ]
+    },
+    {
+        route: "/contact-us",
+        content: "contact us"
     },
 ]
 

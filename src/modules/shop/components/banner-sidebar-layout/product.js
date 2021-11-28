@@ -87,7 +87,7 @@ function Product (props) {
                 {
                     // check products to previews
                     products === null ? <Col xs={12}><BorderLoading /></Col> :
-                    (products === undefined || products.length === 0) ? <Col xs={12}><h2 className="text-center text--typo">No Products Found !</h2></Col> :
+                    (products === undefined || products.length === 0) ? <Col xs={12}><h6 className="text-center text-danger">No Products Found !</h6></Col> :
                     products && itemsList
                 }
             </Row>

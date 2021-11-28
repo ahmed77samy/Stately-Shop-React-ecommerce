@@ -1,0 +1,111 @@
+@import "assets/styles/helpers";
+
+section.article__single__layout {
+    .my__card {
+        box-shadow: var(--shadow-m);
+    }
+    .layout__content__single {
+        .my__card {
+            padding: 20px;
+            & > figure {
+                margin-bottom: 50px;
+            }
+            & > .item__content {
+                /*========== header ==========*/
+                .header {
+                    p span {
+                        text-decoration: underline;
+                    }
+                    h4 {
+                        font-weight: 600;
+                        margin-bottom: 25px;
+                    }
+
+                }
+                /*========== header ==========*/
+                /*========== details ==========*/
+                .details {
+                    padding: 20px 10px;
+                    @include lg {
+                        padding: 20px 30px;
+                    }
+                    figure {
+                        span {
+                            padding: 15px 0 0;
+                            a {
+                                text-decoration: underline;
+                                transition: .3s;
+                                &:hover {
+                                    color: rgba(var(--c-primary-500), $alpha);
+                                }
+                            }
+                        }
+                    }
+                    .item__content {
+                        h5 {
+                            font-weight: 600;
+                            margin-bottom: 15px;
+                        }
+                        ul {
+                            list-style: none;
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 10px;
+                            li::marker {
+                                color: rgba(var(--c-primary-700), $alpha);
+                            }
+                        }
+                    }
+                }
+                /*========== details ==========*/
+                /*========== quote ==========*/
+                .quote {
+                    blockquote {
+                        display: flex;
+                        column-gap: 25px;
+                        margin: 20px 0 10px;
+                        .icon {
+                            font-size: 2em;
+                        }
+                        h5 {
+                            font-style: italic; 
+                        }
+                    }
+                }
+                /*========== quote ==========*/
+                /*========== author ==========*/
+                .author {
+                    display: flex;
+                    column-gap: 15px;
+                    border: 1px solid rgba(var(--c-neutral-200), $alpha);
+                    padding: 20px 10px;
+                    margin-top: 50px;
+                    figure {
+                        flex-shrink: 0;
+                    }
+                }
+                /*========== author ==========*/
+                /*========== tags ==========*/
+                .tags {
+                    margin-top: 40px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    column-gap: 10px;
+                    row-gap: 10px;
+                    flex-wrap: wrap;
+                    a {
+                        border: 1px solid rgba(var(--c-neutral-200), $alpha);
+                        padding: 4px 12px;
+                        text-transform: capitalize;
+                        transition: .3s;
+                        &:hover {
+                            border-color: rgba(var(--c-primary-500), $alpha);
+                            color: rgba(var(--c-primary-700), $alpha) !important;
+                        }
+                    }
+                }
+                /*========== tags ==========*/
+            }
+        }
+    }
+}

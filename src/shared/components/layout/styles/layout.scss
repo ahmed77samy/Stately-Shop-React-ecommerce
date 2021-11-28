@@ -79,7 +79,7 @@ figure {
 
 
 figure, .my__card, .modal-content {
-    border-radius: 1em;
+    // border-radius: 1em;
     overflow: hidden;
 }
 
@@ -142,9 +142,13 @@ figure, .my__card, .modal-content {
     }
 }
 
+.tooltip {
+    z-index: 99999;
+}
+
 aside {
     .aside__header {
-        padding: 18px $aside-padding;
+        padding: 22px $aside-padding;
         background: rgba(var(--c-neutral-100), $alpha);
         color: rgba(var(--c-black), $alpha);
         h5 {

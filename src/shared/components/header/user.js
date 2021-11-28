@@ -5,6 +5,7 @@ import UserWishlist from './user-wishlist';
 import users from "modules/users/users"
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import NavBar from './nav-bar';
 
 function User() {
     let loggedIn = users.isLoggedIn();
@@ -13,7 +14,7 @@ function User() {
     let token = useSelector(state => loggedIn && state.userReducer.user.access_token);
     let id = useSelector(state => loggedIn && state.userReducer.user.user.id);
 
-    // fetch data user from API
+    // fetch data user wishlist from API
     useEffect(() => {
         let isMounted = true
         if (loggedIn && !userwishlist && isMounted) {
@@ -22,7 +23,7 @@ function User() {
         return () => isMounted = false;
     },[loggedIn, id])// eslint-disable-line react-hooks/exhaustive-deps
 
-    // fetch data user from API
+    // fetch data user cart from API
     useEffect(() => {
         let isMounted = true
         if (loggedIn && !usercart && isMounted) {
@@ -38,15 +39,13 @@ function User() {
         <div className="header__user">
             <UserSearch />
             <UserAccount/>
-            {
-                loggedIn && (
-                    <>
-                        <UserWishlist user_wshl={userwishlist} />
-                        <UserCart user_cart={usercart} />
-                    </>
-
-                )
-            }
+            {loggedIn && (
+                <>
+                    <UserWishlist user_wshl={userwishlist} />
+                    <UserCart user_cart={usercart} />
+                </>
+            )}
+            <NavBar />
         </div>
     )
 }

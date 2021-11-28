@@ -1,0 +1,17 @@
+@import "assets/styles/helpers";
+
+section.article__list__layout {
+    aside {
+        .my__card {
+            box-shadow: var(--shadow-m);
+        }
+    }
+    .articles__list {
+        .my__card {
+            &:hover {
+                box-shadow: var(--shadow-m);
+            }
+            @import "./article-item";
+        }
+    }
+}

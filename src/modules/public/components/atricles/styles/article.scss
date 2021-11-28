@@ -1,0 +1,12 @@
+@import "assets/styles/helpers";
+
+section.article {
+    .sec__content {
+        .my__card {
+            &:hover {
+                box-shadow: var(--shadow-m);
+            }
+            @import "./article-item";
+        }
+    }
+}

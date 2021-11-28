@@ -31,34 +31,57 @@
             .modal__fragment {
                 padding: 20px $header-modal-padding 20px;
                 border-bottom: 1px solid rgba(var(--c-neutral-100) , $alpha);
-                input {
-                    width: 100%;
+                a {
+                    font-weight: 600;
+                    transition: .3s;
+                    &:hover {
+                        color: rgba(var(--c-primary-500) , $alpha);
+                        text-decoration: underline;
+                    }
                 }
-            }/*========== modal__fragment ==========*/
+                input {
+                    flex-grow: 1;
+                }
+                button {
+                    flex-shrink: 0
+                }
+            }
+            /*========== modal__fragment ==========*/
             /*========== modal-body ==========*/
             .modal-body {
                 @import "../../header/styles/header-nav-bar";
+                @import "modules/users/components/authentication/styles/form";
                 .body__result {
                     display: flex;
                     flex-direction: column;
                     row-gap: 20px;
                     overflow: auto;
-                    @import "../../header/styles/result-item";
-                    a.show__all {
-                        width: max-content;
+                    & > p a {
                         transition: .3s;
                         &:hover {
-                            color: rgba(var(--c-primary-500) , $alpha);
-                            letter-spacing: 0.5px;
+                            text-decoration: underline
                         }
                     }
+                    @import "../../header/styles/result-item";
                 }
-                @import "modules/users/components/authentication/styles/form";
                 form {
                     max-width: unset;
                 }
             }
             /*========== modal-body ==========*/
+            /*========== modal__footer ==========*/
+            .modal__footer {
+                padding: 25px $header-modal-padding 20px;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 10px;
+                h4 {
+                    font-weight: 600;
+                    span {
+                        font-weight: 600;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+            /*========== modal__footer ==========*/
         }
     }
     &.modal--left {

@@ -1,0 +1,25 @@
+@import "assets/styles/helpers";
+
+section.story {
+    .row {
+        @include md {
+            row-gap: 0;
+        }
+    }
+    .sec__content {
+        max-width: 500px;
+        margin: auto;
+        @include md {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        span {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 5px;
+        }
+        h3 {
+            font-weight: 600;
+        }
+    }
+}

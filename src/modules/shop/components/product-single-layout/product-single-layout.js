@@ -57,14 +57,15 @@ function ProductSingleLayout (props) {
                 <BreadCrumb el={elBreadCrumb} />
                 <Card className="layout__card">
                     {
-                        item ?  
-                        <>
-                            <ProductView item={item} />
-                            <ProductTab item={item} id={props.id} />
-                            <ProductRelated item={item} />
-                        </>
-                        : 
-                        <div className="text-center"><BorderLoading /></div>
+                        item === null ? <div className="text-center"><BorderLoading /></div> :
+                        item === undefined ? <h6 className="text-danger m-0">An unexpected error occurred. Please try again soon!</h6> :
+                        item && (
+                            <>
+                                <ProductView item={item} />
+                                <ProductTab item={item} id={props.id} />
+                                <ProductRelated item={item} />
+                            </>
+                        )
                     }
                 </Card>
             </Container>

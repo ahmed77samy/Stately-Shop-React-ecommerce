@@ -36,7 +36,10 @@ export const CompareIcon = (props) => <i {...props} className={`fal fa-balance-s
 export const ClockIcon = (props) => <i {...props} className={`fal fa-clock ${props.className}`}></i>;
 export const PlayIcon = (props) => <i {...props} className={`fal fa-play ${props.className}`}></i>;
 export const CommentIcon = (props) => <i {...props} className={`fal fa-comments ${props.className}`}></i>;
+export const QuoteIcon = (props) => <i {...props} className={`fas fa-quote-left ${props.className}`}></i>;
 export const OrdersIcon = (props) => <i {...props} className={`fal fa-shopping-bag ${props.className}`}></i>;
 export const TrashIcon = (props) => <i {...props} className={`fal fa-trash ${props.className}`}></i>;
-
 export const EditIcon = (props) => <i {...props} className={`far fa-pencil ${props.className}`}></i>;
+export const AccountIcon = (props) => <i {...props} className={`fal fa-user-circle ${props.className}`}></i>;
+export const SettingIcon = (props) => <i {...props} className={`fal fa-cog ${props.className}`}></i>;
+export const LogoutIcon = (props) => <i {...props} className={`fal fa-sign-out-alt ${props.className}`}></i>;

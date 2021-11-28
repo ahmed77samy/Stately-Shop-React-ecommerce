@@ -9,7 +9,7 @@ import { useEffect } from "react"
 
 function FormActions (props) {
     const { propsformik , item , waitreq } = props
-    const [quantity, setQuantity] = useState(0)
+    const [quantity, setQuantity] = useState(1)
     const quantityRef = useRef(0)
     let loggedIn = users.isLoggedIn();
     const user_wishlist = useSelector(state => state.userReducer.user_wishlist)

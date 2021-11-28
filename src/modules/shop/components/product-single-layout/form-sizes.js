@@ -13,7 +13,9 @@ function FormSizes (props) {
     // reset size if isSubmitting
     useEffect(() => {
         if(propsformik.isSubmitting) {
-            sizeRef.current?.querySelector("#product-single-form-size-default")?.click()
+            setTimeout(() => {
+                sizeRef.current?.querySelector("#product-single-form-size-default")?.click()
+            });
         }
     },[propsformik.isSubmitting])
 
@@ -41,7 +43,7 @@ function FormSizes (props) {
     useEffect(() => {
         let isMounted = true;
         setSizes(null)
-        ShopApi.showSizes(item.id)
+        ShopApi.showSizes(item.product_id || item.id)
         .then(data => {
             if(isMounted){
                 if(data.data.payload.length > 0) {

@@ -1,0 +1,13 @@
+@import "assets/styles/helpers";
+
+section.facts {
+    .sec__content {
+        h6 {
+            font-size: 4rem;
+            font-weight: 600;
+        }
+        span {
+            font-size: 1.5rem;
+        }
+    }
+}

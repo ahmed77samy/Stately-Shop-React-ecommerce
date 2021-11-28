@@ -13,7 +13,6 @@ import PropTypes from 'prop-types';
 function FormLogin (props) {
     const [errors , setErrors] = useState({})
     const [waitreq , setWaitreq] = useState(false)
-    
     let { toggle } = props
 
     // initial Values to form register
@@ -62,11 +61,8 @@ function FormLogin (props) {
             {...props}
         >
             <MyInput type="email" className="input__default" name="email" placeholder="Your Email Address" errors={errors} />
-
             <MyInput type="password" className="input__default" name="password" placeholder="Your Password" errors={errors} />
-            
             <MyButton value="login" waitrequest={`${waitreq}`} type="submit" className={`btn--reset btn__default btn--dark ${waitreq && 'disabled'}`} />
-            
             <Form.Group className="text-center">
                 <p className="text-capitalize">
                     <Link to="/" className="anchors--reset">forget your password?</Link>
@@ -75,9 +71,7 @@ function FormLogin (props) {
                     don't have an account? <Link to="/" className="anchors--reset" onClick={toggle}>register</Link>
                 </p>
             </Form.Group>
-            
             <div className="bg--neutral--200 hr--1 hr--after" data-after="or Login With" />
-            
             <FormSocial />
         </MyForm>
     )

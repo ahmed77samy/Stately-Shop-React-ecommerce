@@ -14,7 +14,7 @@ function Collection () {
      * set limit state to show more items
      * @param {event} e 
      */
-     const handleClick = () => {
+    const handleClick = () => {
         if(!(limit > collections.length)) {
             return setLimit(limit => limit + limited)
         }
@@ -45,11 +45,11 @@ function Collection () {
                 {
                     // check collection to previews
                     collections === null ? <Col xs={12}><BorderLoading /></Col> :
-                    (collections === undefined || collections.length === 0) ? <Col xs={12}><h2 className="text-center text--typo">No Collections Found !</h2></Col> :
+                    (collections === undefined || collections.length === 0) ? <Col xs={12}><h6 className="text-center text-danger">No Collections Found !</h6></Col> :
                     collections && itemList
                 }
             </Row>
-            {collections && collections.length > 0 && <button to="/" className="mx-auto mt-5 btn--reset btn__default btn--primary" onClick={handleClick}>show more</button>}
+            {collections && collections.length > 0 && limit < collections.length && <button to="/" className="mx-auto mt-5 btn--reset btn__default btn--primary" onClick={handleClick}>show more</button>}
         </div>
     )
 }
