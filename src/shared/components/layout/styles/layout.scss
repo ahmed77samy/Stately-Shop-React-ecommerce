@@ -149,7 +149,7 @@ figure, .my__card, .modal-content {
 aside {
     .aside__header {
         padding: 22px $aside-padding;
-        background: rgba(var(--c-neutral-100), $alpha);
+        border-bottom: 1px solid rgba(var(--c-neutral-200), $alpha);
         color: rgba(var(--c-black), $alpha);
         h5 {
             text-transform: capitalize;
@@ -157,6 +157,19 @@ aside {
     }
     .aside__content {
         padding: 0 $aside-padding;
+    }
+    .aside__footer {
+        padding: 15px $aside-padding;
+        border-top: 1px solid rgba(var(--c-neutral-200), $alpha);
+        a {
+            font-weight: 600;
+            text-transform: uppercase;
+            color: rgba( var(--c-neutral-700) , $alpha);
+            transition: .3s;
+            &:hover {
+                color: rgba( var(--c-primary-500) , $alpha);
+            }
+        }
     }
 }
 
@@ -228,17 +241,27 @@ aside {
 .social {
     a {
         color: rgba(var(--c-white) , $alpha);
+        transition: .3s;
         &:hover {
             color: rgba(var(--c-white) , $alpha);
         }
         &.twitter {
             background: #1da1f2;
+            &:hover {
+                background: #1da1f2a9;
+            }
         }
         &.facebook {
-            background: #3b5998;
+            background: #446CA7;
+            &:hover {
+                background: #446CA7d9;
+            }
         }
         &.google {
             background: #db402c;
+            &:hover {
+                background: #db402cb9;
+            }
         }
     }
 }

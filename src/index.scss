@@ -12,18 +12,14 @@
 
 /*========== General Style ==========*/
 :root {
-
     --c-white: 255, 255, 255;
     --c-black: 0, 0, 0;
-
     --c-star: 253, 188, 0;
-
     --raduis-1: 1px;
     --raduis-2: 2px;
     --raduis-3: 3px;
     --raduis-4: 4px;
     --raduis-5: 5px;
-
     --c-secondary-50: 255, 237, 212;
     --c-secondary-100: 255, 229, 192;
     --c-secondary-200: 255, 213, 153;
@@ -54,11 +50,9 @@
     --c-neutral-700: 55,65,81;
     --c-neutral-800: 31,41,55;
     --c-neutral-900: 17,24,39;
-
-
-    --shadow-l: rgba(0, 0, 0, 0.08) 0px 2px 8px;
-    --shadow-m: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-    --shadow-x: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    --shadow-l: 0px 0px 3px 0px rgba(0,0,0,0.05);
+    --shadow-m: 0px 0px 8px 0px rgba(0,0,0,0.05);
+    --shadow-x: 0px 0px 15px 0px rgba(0,0,0,0.05);
 }
 html {
     font-size: 14px;

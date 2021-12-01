@@ -1,0 +1,235 @@
+.user__profile {
+    /*========== aside ==========*/
+    aside {
+        &.aside__left,&.aside__right {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+        }
+        .my__card {
+            box-shadow: var(--shadow-l);
+        }
+        /*========== aside__content ==========*/
+        .aside__content {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            .aside__item {
+                padding: 15px 0;
+            }
+        }
+        /*========== aside__content ==========*/
+        /*========== profile__intro ==========*/
+        .profile__intro {
+            .social {
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 35px;
+                    width: 100%;
+                    border-radius: 3px;
+                    .icon {
+                        color: rgba(var(--c-white), $alpha);
+                    }
+                }
+            }
+        }
+        /*========== profile__intro ==========*/
+        /*========== profile__spotify__list ==========*/
+        .profile__spotify__list {
+            ul {
+                .aside__item {
+                    .list__item {
+                        display: flex;
+                        column-gap: 15px;
+                        img {
+                            flex-shrink: 0;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 2px;
+                            object-fit: cover;
+                        }
+                        h6 {
+                            @include lineclamp(1);
+                            margin-bottom: 3px;
+                            transition: .3s;
+                            &:hover {
+                                color: rgba(var(--c-primary-500), $alpha) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /*========== profile__spotify__list ==========*/
+        /*========== profile__last__reviews ==========*/
+        .profile__last__reviews {
+            .aside__item {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 10px;
+                column-gap: 10px;
+                padding: 0;
+                img {
+                    width: calc((100% / 3) - 6.7px);
+                    object-fit: cover;
+                }
+            }
+        }
+        /*========== profile__last__reviews ==========*/
+        /*========== profile__blog__posts ==========*/
+        .profile__blog__posts {
+            .aside__item {
+                h6 {
+                    transition: .3s;
+                    &:hover {
+                        color: rgba(var(--c-primary-500), $alpha) !important;
+                    }
+                }
+            }
+        }
+        /*========== profile__blog__posts ==========*/
+        /*========== profile__favourite__product ==========*/
+        .profile__favourite__product {
+            ul {
+                .aside__item {
+                    border-bottom: 1px solid rgba(var(--c-neutral-200), $alpha);
+                    &:last-of-type {
+                        border-bottom: none;
+                    }
+                    .list__item {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 15px;
+                        img {
+                            flex-shrink: 0;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 2px;
+                            object-fit: cover;
+                        }
+                        & > div {
+                            div {
+                                h6 {
+                                    @include lineclamp(1);
+                                    margin-bottom: 3px;
+                                    width: max-content;
+                                    a {
+                                        transition: .3s;
+                                        &:hover {
+                                            color: rgba(var(--c-primary-500), $alpha) !important;
+                                        }
+                                    }
+                                }
+                                & > span {
+                                    @include lineclamp(1);
+                                }
+                            }
+                            & > span {
+                                flex-shrink: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /*========== profile__favourite__product ==========*/
+    }
+    /*========== aside ==========*/
+    /*========== profile__content ==========*/
+    .profile__content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+        .my__card {
+            box-shadow: var(--shadow-l);
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        /*========== profile__content__item ==========*/
+        .profile__content__item {
+            /*========== item__header ==========*/
+            .item__header {
+                padding: 5px 0 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                column-gap: 15px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                }
+                h6 {
+                    width: max-content;
+                    transition: .3s;
+                    &:hover {
+                        color: rgba(var(--c-primary-500), $alpha);
+                        @include lineclamp(1)
+                    }
+                }
+                span {
+                    p {
+                        display: inline;
+                        color: rgba(var(--c-neutral-500), $alpha);
+                        transition: .3s;
+                        color: rgba(var(--c-primary-500), $alpha);
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            /*========== item__header ==========*/
+            /*========== item__content ==========*/
+            .item__content {
+                padding: 0 0 15px;
+            }
+            /*========== item__content ==========*/
+            /*========== item__footer ==========*/
+            .item__footer {
+                border-top: 1px solid rgba(var(--c-neutral-200), $alpha);
+                padding: 20px 0 10px;
+                display: flex;
+                justify-content: space-between;
+                & > div.d-flex {
+                    column-gap: 15px;
+                }
+                .like__imgs {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        border: 2px solid rgba(var(--c-white), $alpha);
+                    }
+                }
+                div.actions {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 5px;
+                    color: rgba(var(--c-neutral-400), $alpha);
+                    &:hover {
+                        color: rgba(var(--c-primary-500), $alpha);
+                    }
+                    span {
+                        color: inherit;
+                        transition: .3s;
+                    }
+                    .icon {
+                        transition: .3s;
+                        font-weight: 400;
+                    }
+                }
+            }
+            /*========== item__footer ==========*/
+        }
+        /*========== profile__content__item ==========*/
+    }
+    /*========== profile__content ==========*/
+}

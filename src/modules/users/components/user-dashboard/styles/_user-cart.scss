@@ -1,0 +1,9 @@
+.user__cart {
+    box-shadow: var(--shadow-l);
+    .layouts--body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        @import "./cart-item";
+    }
+}

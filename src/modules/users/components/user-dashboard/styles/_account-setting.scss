@@ -1,0 +1,42 @@
+.account__setting {
+    form {
+        row-gap: 30px;
+        .setting__item {
+            display: flex;
+            justify-content: space-between;
+            h6 {
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            input {
+                position: relative;
+                appearance: none;
+                width: 40px;
+                height: 20px;
+                border-radius: 10px;
+                background: rgba(var(--c-neutral-700), $alpha);
+                flex-shrink: 0;
+                overflow: hidden;
+                &::after {
+                    content: "";
+                    transition: .3s;
+                    position: absolute;
+                    top: 50%;
+                    left: 3px;
+                    transform: translateY(-50%);
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                    background: rgba(var(--c-white), $alpha);
+                }
+                &.active {
+                    background: rgba(var(--c-primary-500), $alpha);
+                    &::after {
+                        left: 100%;
+                        transform: translate(calc(-100% - 3px) , -50%);
+                    }
+                }
+            }
+        }
+    }
+}

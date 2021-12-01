@@ -1,0 +1,36 @@
+.user__reviews {
+    box-shadow: var(--shadow-l);
+    .layouts--body {
+        .reviews__item {
+            /*========== figure ==========*/
+            figure {
+                img {
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+            /*========== figure ==========*/
+            /*========== item__content ==========*/
+            .item__content {
+                padding: 20px 0 0;
+                display: flex;
+                flex-direction: column;
+                & > div {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 15px;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                }
+                p.description {
+                    @include lineclamp(3)
+                }
+            }
+            /*========== item__content ==========*/
+        }        
+    }
+}

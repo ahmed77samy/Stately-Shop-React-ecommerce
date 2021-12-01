@@ -51,7 +51,7 @@ function UserCart (props) {
                 <CartIcon className="icon" onClick={toggleModal} />
                 <span className="font--size--small badge__number bg--black text-white">
                     {
-                        // check user_wshl to previews
+                        // check ucer_cart to previews
                         Cart === undefined ? 0 :
                         Cart && Cart?.length
                     }
@@ -76,7 +76,7 @@ function UserCart (props) {
                 <Modal.Body>
                     <div className="body__result">
                         {
-                            // check user_wshl to previews
+                            // check ucer_cart to previews
                             Cart === null ? <div className="text-center my-3"><BorderLoading /></div> :
                             Cart === undefined ? <p className="text-danger">An unexpected error occurred. Please try again soon</p> :
                             Cart.length === 0 ? <p>No Products In Cart <Link to="/shop/banner-sidebar" className="anchors--reset text--primary--500">Shop Now.</Link> </p> :
@@ -87,7 +87,7 @@ function UserCart (props) {
                 {/*========== Modal.Body ==========*/}
                 {/*========== modal__footer ==========*/}
                 {
-                    // check user_wshl to previews
+                    // check ucer_cart to previews
                     Cart === null ? <div className="text-center my-3"><BorderLoading /></div> :
                     Cart === undefined ? <p className="text-danger">An unexpected error occurred. Please try again soon</p> :
                     Cart.length === 0 ? <></> :

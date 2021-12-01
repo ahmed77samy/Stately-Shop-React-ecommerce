@@ -1,0 +1,42 @@
+.user__setting {
+    /*========== aside ==========*/
+    aside {
+        box-shadow: var(--shadow-l);
+        .aside__content {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .nav-item {
+                a {
+                    padding: 7px 0;
+                    margin: 7px 0;
+                    background: none;
+                    &:hover,&.active {
+                        span {
+                            color: rgba(var(--c-primary-500), $alpha);
+                        }
+                    }
+                    span {
+                        display: flex;
+                        align-items: center;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+    /*========== aside ==========*/
+
+    .my__card {
+        box-shadow: var(--shadow-l);
+    }
+    /*========== content__setting ==========*/
+    .content__setting {
+        .layouts--header {
+            padding-bottom: 20px;
+        }
+        @import "./account-setting";
+        @import "./personal-information";
+        @import "./change-password";
+    }
+    /*========== content__setting ==========*/
+}

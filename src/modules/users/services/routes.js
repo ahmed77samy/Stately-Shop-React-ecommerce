@@ -2,6 +2,11 @@ import { NavigateTo } from "core/route-service";
 import MyAccount from "../components/my-account";
 import user from "../users";
 import User from "../components/user";
+import UserCart from "../components/user-cart";
+import UserWishlist from "../components/user-wishlist";
+import UserSetting from "../components/user-setting";
+import UserReviews from "../components/user-reviews";
+import UserOrders from "../components/user-orders.js";
 
 /**
  * middleware checked on logged In
@@ -29,5 +34,9 @@ function isLoggedOut() {
 export default function userRoutes (route) {
     route("/user/account" , MyAccount, [isLoggedIn]);
     route("/user" , User, [isLoggedOut]);
-    route("/user/:Key" , User, [isLoggedOut]);
+    route("/user/cart" , UserCart, [isLoggedOut]);
+    route("/user/favourites" , UserWishlist, [isLoggedOut]);
+    route("/user/setting" , UserSetting, [isLoggedOut]);
+    route("/user/reviews" , UserReviews, [isLoggedOut]);
+    route("/user/orders" , UserOrders, [isLoggedOut]);
 }

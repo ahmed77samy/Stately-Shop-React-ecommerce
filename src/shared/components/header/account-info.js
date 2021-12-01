@@ -23,7 +23,7 @@ function AccountInfo () {
      * {@inheritdoc}
      */
     return (
-        <DropdownButton menuAlign="right" id="dropdown-basic" title={<UserIcon className="icon" />} variant="none">
+        <DropdownButton id="dropdown-basic" title={<UserIcon className="icon" />} variant="none">
             <Dropdown.Header>
                 <img src={`${main_root}/${user_data.img}`} alt="user" />
                 <div className="info">

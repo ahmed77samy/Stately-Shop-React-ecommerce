@@ -1,0 +1,6 @@
+.user__wishlist {
+    box-shadow: var(--shadow-l);
+    .layouts--body {
+        @import "./wishlist-item";           
+    }
+}

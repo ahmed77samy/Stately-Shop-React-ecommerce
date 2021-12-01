@@ -27,7 +27,7 @@ function MyForm (props) {
             return child;
         });
         return (
-            <Form noValidate className={props.className}>
+            <Form noValidate className={props.className} id={props.id}>
                 {childrenWithProps}
             </Form>
         )

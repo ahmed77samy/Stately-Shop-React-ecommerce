@@ -43,3 +43,6 @@ export const EditIcon = (props) => <i {...props} className={`far fa-pencil ${pro
 export const AccountIcon = (props) => <i {...props} className={`fal fa-user-circle ${props.className}`}></i>;
 export const SettingIcon = (props) => <i {...props} className={`fal fa-cog ${props.className}`}></i>;
 export const LogoutIcon = (props) => <i {...props} className={`fal fa-sign-out-alt ${props.className}`}></i>;
+export const KeyIcon = (props) => <i {...props} className={`fal fa-key ${props.className}`}></i>;
+export const CameraIcon = (props) => <i {...props} className={`fas fa-camera ${props.className}`}></i>;
+export const ShareIcon = (props) => <i {...props} className={`fal fa-share ${props.className}`}></i>;

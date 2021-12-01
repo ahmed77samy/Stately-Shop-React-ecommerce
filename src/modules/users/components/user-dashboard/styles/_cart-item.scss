@@ -1,0 +1,66 @@
+.cart__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @include sm {
+        row-gap: 10px;
+    }
+    /*========== details ==========*/
+    .details {
+        display: flex;
+        column-gap: 15px;
+        flex-basis: 100%;
+        flex-direction: column;
+        row-gap: 10px;
+        @include sm {
+            align-items: center;
+            flex-direction: row;
+        }
+        @include lg {
+            flex-basis: 40%;
+        }
+        figure {
+            flex-shrink: 0;
+            width: max-content;
+            img {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+            }
+        }
+        .item__content {
+            h6 {
+                @include lineclamp(1);
+                transition: .3s;
+                &:hover {
+                    color: rgba(var(--c-primary-500), $alpha);
+                }
+            }
+        }
+    }
+    /*========== details ==========*/
+    /*========== subtotal, quantity ==========*/
+    .subtotal,.quantity {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-basis: 100%;
+        @include lg {
+            align-items: center;
+            flex-direction: column;
+            flex-basis: unset;
+        }
+    }
+    /*========== subtotal, quantity ==========*/
+    /*========== actions ==========*/
+    .actions {
+        display: flex;
+        column-gap: 10px;
+        a.badge__raduis {
+            box-shadow: none;
+            color: rgba(var(--c-white), $alpha) !important;
+        }
+    }
+    /*========== actions ==========*/
+}

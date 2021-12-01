@@ -3652,6 +3652,66 @@ export const user_items = [
                 comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
                 product: product_items[1]
             },
+            {
+                rating: 4,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[0]
+            },
+            {
+                rating: 3,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[3]
+            },
+            {
+                rating: 5,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[2]
+            },
+            {
+                rating: 1,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[1]
+            },
+            {
+                rating: 4,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[0]
+            },
+            {
+                rating: 3,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[3]
+            },
+            {
+                rating: 5,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[2]
+            },
+            {
+                rating: 1,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[1]
+            },
+            {
+                rating: 4,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[0]
+            },
+            {
+                rating: 3,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[3]
+            },
+            {
+                rating: 5,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[2]
+            },
+            {
+                rating: 1,
+                comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                product: product_items[1]
+            },
         ]
     }
 ]

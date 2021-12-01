@@ -1,0 +1,55 @@
+.personal__information {
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+        /*========== info__item ==========*/
+        .info__item {
+            flex-basis: 100%;
+            input {
+                width: 100%;
+            }
+            @include md {
+                flex-basis: calc(50% - 10px);
+            }
+        }
+        /*========== info__item ==========*/
+        /*========== social__item ==========*/
+        .social__item {
+            width: 100%;
+            display: flex;
+            border: 1px solid rgba(var(--c-neutral-200), $alpha);
+            margin-top: 10px;
+            min-height: 50px;
+            & > a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                width: 50px;
+                border-right: 1px solid rgba(var(--c-neutral-200), $alpha);
+                color: rgba(var(--c-white), $alpha);
+                .icon {
+                    font-size: 2em;
+                }
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 10px 0 10px 20px;
+                a {
+                    color: rgba(var(--c-neutral-500), $alpha);
+                    transition: .3s;
+                    text-decoration: underline;
+                    width: max-content;
+                    &:hover {
+                        color: rgba(var(--c-primary-500), $alpha);
+                    }
+                }
+            }
+        }
+        /*========== social__item ==========*/
+    }
+}
