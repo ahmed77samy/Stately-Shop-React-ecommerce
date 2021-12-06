@@ -4,7 +4,7 @@ import "./styles/header-modal.scss"
 
 function HeaderModal (props) {
     return(
-        <Modal {...props} className={`header__modal ${props.className}`}>
+        <Modal animation={true} {...props} className={`header__modal ${props.className}`}>
             {props.children}
         </Modal>
     )

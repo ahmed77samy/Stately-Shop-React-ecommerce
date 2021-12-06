@@ -36,10 +36,10 @@ function Header () {
     return(
         <header ref={header}>
             <Container>
-                <Row className="justify-content-between">
+                <Row className="justify-content-between flex-nowrap">
                     {/*========== header__logo ==========*/}
-                    <Col xs="auto" lg={2} className="d-flex align-items-center justify-content-start">
-                        <Logo />
+                    <Col xs={2} lg={2} className="d-flex align-items-center justify-content-start">
+                        <Logo foreground="dark" />
                     </Col>
                     {/*========== header__nav ==========*/}
                     <Col xs={8} className="d-none d-lg-flex align-items-center justify-content-center">

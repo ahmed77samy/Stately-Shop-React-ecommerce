@@ -1,5 +1,6 @@
 import React from "react";
 import user from "modules/users/users"
+import Loading from "shared/components/layout/loading";
 
 class Middleware extends React.Component {  
     /**
@@ -10,6 +11,9 @@ class Middleware extends React.Component {
         super(props)
         this.Mounted = true
     }
+    
+    state = {loaded: true}
+    
     /**
      * {@inheritdoc}
      */
@@ -25,11 +29,11 @@ class Middleware extends React.Component {
                         if (output !== false) {
                             return output();
                         } else {
-                            return this.forceUpdate()
+                            return this.setState({loaded: false})
                         }
                     }
                 }
-                return this.forceUpdate()
+                return this.setState({loaded: false})
             })
         }
     }
@@ -46,7 +50,7 @@ class Middleware extends React.Component {
         let {history, route, props} = this.props
         // scroll to the top page when navigating to new page
         window.scrollTo(0, 0);
-        return <route.component history={history} props={props} />;
+        return this.state.loaded ? <Loading /> : <route.component history={history} props={props} />;
     }
     
 }

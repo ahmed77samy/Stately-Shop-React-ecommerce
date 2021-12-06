@@ -10,7 +10,7 @@ function ArticleItem (props) {
             <div className="article__item">
                 {/*========== figure ==========*/}
                 <Figure className="anchors--effect bg--neutral--100">
-                    <Link to="/article-single" className="anchors--reset">
+                    <Link to="/article/single" className="anchors--reset">
                         <img src={photo} alt="article" className="w-100" />
                     </Link>
                 </Figure>
@@ -34,7 +34,7 @@ function ArticleItem (props) {
                     </div>
                     {/*========== author__info ==========*/}
                     <h4 className="text-capitalize h6 m-0">
-                        <Link to="/article-single" className="anchors--reset">
+                        <Link to="/article/single" className="anchors--reset">
                             {title}
                         </Link>
                     </h4>

@@ -9,6 +9,7 @@ import shop from "modules/shop/shop"
 import * as Yup from "yup"
 import { store } from "core/route-service"
 import ShopApi from "../../services/api"
+import { addNotify } from "core/notification-service"
 
 function Reviews (props) {
     let reviews = useSelector(state => state.shopReducer.product_reviews)
@@ -52,11 +53,23 @@ function Reviews (props) {
                 ...data.data.payload
             }
             setWaitreq(false)
+            addNotify({
+                title: "success process",
+                message: "review has been send",
+                level: 'success',
+                position: 'bl',
+            })
             shop.addReview(f_data)
             actions.resetForm({ values: {re_rate: "",re_des:""} })
         })
-        .catch(() => {
+        .catch(({response}) => {
             setWaitreq(false)
+            addNotify({
+                title: "error process",
+                message: `${response.data.message}`,
+                level: 'error',
+                position: 'bl',
+            })
         })
     }
     

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import PropTypes from 'prop-types';
 
 function ItemsList (props) {
@@ -8,9 +8,9 @@ function ItemsList (props) {
      */
     return(
         <li className={classes}>
-            <Link className='anchors--reset' to={route} >
+            <NavLink className='anchors--reset' to={route} >
                 {content}
-            </Link>
+            </NavLink>
         </li>
     )
 }

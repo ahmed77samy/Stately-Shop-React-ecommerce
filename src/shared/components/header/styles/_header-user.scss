@@ -30,7 +30,7 @@
         }
         /*========== dropdown-menu ==========*/
         .dropdown-menu.show {
-            transform: translateY(120px) !important;
+            transform: translateY(#{$header-height}) !important;
             border-radius: 0;
             padding: 0;
             border: none;

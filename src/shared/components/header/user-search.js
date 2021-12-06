@@ -61,7 +61,7 @@ function UserSearch () {
             </div>
             {/*========== wrapper__badge ==========*/}
             {/*========== HeaderModal ==========*/}
-            <HeaderModal className="modal--right" show={modal} onHide={toggleModal} animation={false}>
+            <HeaderModal className="modal--right" show={modal} onHide={toggleModal}>
                 {/*========== Modal.Header ==========*/}
                 <Modal.Header className="dark--mode">
                     <Modal.Title><h3 className="h6 m-0 text-uppercase">search our site</h3></Modal.Title>

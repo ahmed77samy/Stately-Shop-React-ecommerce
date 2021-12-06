@@ -16,6 +16,7 @@
                 display: flex;
                 align-items: center;
                 column-gap: 2px;
+                position: relative;
                 &:hover,&.active {
                     color: rgba(var(--c-primary-500) , $alpha);
                 }

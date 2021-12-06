@@ -123,7 +123,7 @@ export const product_items = [
         },
         slideshow: true,
         salary: 100,
-        category: [{name: "jewelry" , path: "/"}, {name: "children" , path: "/"}]
+        category: [{name: "jewelry"}, {name: "children"}]
     },
     {
         photo: product2,

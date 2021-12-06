@@ -9,6 +9,8 @@ import * as Yup from "yup"
 import { useState } from "react"
 import ShopApi from "../../services/api"
 import users from "modules/users/users"
+import { addNotify } from "core/notification-service"
+import ProductNotify from "shared/components/notifications/product-notify"
 
 function ProductViewForm (props) {
     // schema validation with yup shape
@@ -37,11 +39,23 @@ function ProductViewForm (props) {
             ShopApi.addToCart(f_values, token)
             .then((data) => {
                 setWaitreq(false)
+                addNotify({
+                    title: "success process",
+                    message: <ProductNotify item={props.item} />,
+                    level: 'success',
+                    position: 'bl',
+                })
                 shop.addToCart(data.data.payload)
                 actions.resetForm({values: {size_id: defaultsize, color_id: defaultcolor, quantity: 1}})
                 document.querySelector("header .user__cart .icon").click()
             })
             .catch(({response}) => {
+                addNotify({
+                    title: "error process",
+                    message: `${response.data.message}`,
+                    level: 'error',
+                    position: 'bl',
+                })
                 setWaitreq(false)
             })
         } else {

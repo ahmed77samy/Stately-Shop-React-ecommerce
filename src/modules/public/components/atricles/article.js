@@ -32,7 +32,7 @@ function Article () {
                         <Row className="layout--space">
                             {itemList}
                             <Col xs={12}>
-                                <Link to="/article-grid" className="mx-auto text--white anchors--reset btn__default btn--primary">discover now</Link>
+                                <Link to="/article/grid" className="mx-auto text--white anchors--reset btn__default btn--primary">discover now</Link>
                             </Col>
                         </Row>
                     </div>

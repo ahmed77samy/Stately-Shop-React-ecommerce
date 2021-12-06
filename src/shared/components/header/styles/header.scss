@@ -1,7 +1,7 @@
 @import "assets/styles/helpers";
 
 header {
-    z-index: 9999;
+    z-index: 999;
     background: rgba(var(--c-white) , $alpha);
     height: $header-height;
     &.live__stuck {

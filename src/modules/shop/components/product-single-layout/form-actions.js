@@ -18,7 +18,7 @@ function FormActions (props) {
     useEffect(() => {
         let isMounted = true
         if(propsformik.isSubmitting && isMounted) {
-            setQuantity(0)
+            setQuantity(1)
         }
         return () => isMounted = false;
     },[propsformik.isSubmitting])

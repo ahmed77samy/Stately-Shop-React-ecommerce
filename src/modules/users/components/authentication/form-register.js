@@ -32,8 +32,8 @@ function FormRegister (props) {
         setWaitreq(true)
         try {
             let data = await UserApi.register(values)
-            setWaitreq(false)
             if(data.status === 201) {
+                setWaitreq(false)
                 NavigateTo("/user/account/emailverification")
             }
         } catch ({response}) {

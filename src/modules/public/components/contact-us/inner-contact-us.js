@@ -42,7 +42,7 @@ function InnerContactUs () {
                                 </div>
                             </Col>
                             <Col xs={12}><h4 className="text-center text-capitalize m-0">Drop Us Message</h4></Col>
-                            <Row className="w-100 px-4 m-0 layout--space--20" as='form'>
+                            <Row className="w-100 px-0 px-md-4 m-0 layout--space--20" as='form'>
                                 <Col xs={12} md={6}>
                                     <input className="input__default w-100" placeholder="Your Name" />
                                     <input className="input__default w-100" placeholder="Your Email Address" />

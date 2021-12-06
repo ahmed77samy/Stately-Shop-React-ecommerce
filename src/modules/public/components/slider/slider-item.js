@@ -10,7 +10,7 @@ function SliderItem (props) {
     const categoryList = category.map((cate , index) => {
         return (
             <span key={index} className="font--size--small text-capitalize">
-                <Link to={cate.path} className="anchors--reset">{cate.name}</Link>
+                <Link to={`/shop/banner-sidebar`} className="anchors--reset">{cate.name}</Link>
                 {index !== (category.length - 1) && ", "}
             </span>
         )
@@ -29,7 +29,7 @@ function SliderItem (props) {
                             {categoryList}
                             <h2 className="mb-4 text-capitalize">{name}</h2>
                             <p className="mb-4">{description.short}</p>
-                            <Link role="button" to="/" className="anchors--reset btn__default btn--secondary">discover now</Link>
+                            <button className="anchors--reset btn__default btn--light btn--border">discover more</button>
                         </div>
                     </Col>
                     {/*========== item__data ==========*/}

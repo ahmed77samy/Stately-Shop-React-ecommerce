@@ -41,7 +41,7 @@ function ProfileFavouriteProducts () {
                 {/*========== aside__content ==========*/}
                 {/*========== aside__footer ==========*/}
                 <div className="aside__footer">
-                    <Link to="/user/reviews" className="anchors--reset font--size--small">show all</Link>
+                    <Link to="/user/favourites" className="anchors--reset font--size--small">show all</Link>
                 </div>
                 {/*========== aside__footer ==========*/}
             </Card>

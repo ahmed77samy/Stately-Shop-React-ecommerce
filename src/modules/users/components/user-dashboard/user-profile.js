@@ -6,14 +6,14 @@ import ProfileContent from "./profile-content"
 function UserProfile () {
     return (
         <div className="user__profile">
-            <Row>
-                <Col xs={3}>
+            <Row className="layout--space--30">
+                <Col xs={12} lg={3}>
                     <AsideProfileLeft />
                 </Col>
-                <Col xs={6}>
+                <Col xs={12} lg={6}>
                     <ProfileContent />
                 </Col>
-                <Col xs={3}>
+                <Col xs={12} lg={3}>
                     <AsideProfileRight />
                 </Col>
             </Row>

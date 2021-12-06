@@ -38,7 +38,7 @@ function UserWishlist (props) {
                 </span>
             </div>
             {/*========== HeaderModal ==========*/}
-            <HeaderModal className="modal--right" show={modal} onHide={toggleModal} animation={false}>
+            <HeaderModal className="modal--right" show={modal} onHide={toggleModal}>
                 {/*========== Modal.Header ==========*/}
                 <Modal.Header className="dark--mode">
                     <Modal.Title><h3 className="h4 m-0 text-uppercase">your wishlist</h3></Modal.Title>

@@ -3,112 +3,80 @@ import { TruckIcon , RepeatIcon , PaymentIcon , HandHelpIcon } from '../elements
 
 export const personal_items = [
     {
-        route: "/",
-        content: "wishlist",
+        route: "/demo1",
+        content: "home",
     },
     {
-        route: "/",
-        content: "orders",
+        route: "/about-us",
+        content: "about us",
     },
     {
-        route: "/",
-        content: "offers",
+        route: "/shop",
+        content: "shop",
     },
     {
-        route: "/",
-        content: "Help and advice",
+        route: "/article",
+        content: "blog - grid",
     },
     {
-        route: "/",
-        content: "Shipping & Returns"
+        route: "/user/account",
+        content: "login & register"
     },
     {
-        route: "/",
-        content: "Terms and conditions",
-    },
-    {
-        route: "/",
-        content: "offers",
-    },
-    {
-        route: "/",
-        content: "Help and advice",
+        route: "/contact-us",
+        content: "contact us",
     },
 ]
 export const information_items = [
     {
-        route: "/",
-        content: "login",
+        route: "/user",
+        content: "profile",
     },
     {
-        route: "/",
-        content: "orders",
+        route: "/user/cart",
+        content: "cart",
     },
     {
-        route: "/",
-        content: "service",
-    },
-    {
-        route: "/",
+        route: "/user/favourites",
         content: "wishlist",
     },
     {
-        route: "/",
-        content: "login"
-    },
-    {
-        route: "/",
+        route: "/user/orders",
         content: "orders",
     },
     {
-        route: "/",
-        content: "orders",
+        route: "/user/reviews",
+        content: "reviews"
     },
     {
-        route: "/",
-        content: "service",
-    },
-    {
-        route: "/",
-        content: "Terms and conditions",
+        route: "/user/setting",
+        content: "Account setting",
     },
 ]
 export const about_items = [
     {
-        route: "/",
-        content: "login",
+        route: "/demo1",
+        content: "home",
     },
     {
-        route: "/",
-        content: "orders",
+        route: "/about-us",
+        content: "about us",
     },
     {
-        route: "/",
-        content: "service",
+        route: "/shop",
+        content: "shop",
     },
     {
-        route: "/",
-        content: "wishlist",
+        route: "/article",
+        content: "blog - grid",
     },
     {
-        route: "/",
-        content: "login"
+        route: "/user/account",
+        content: "login & register"
     },
     {
-        route: "/",
-        content: "orders",
-    },
-    {
-        route: "/",
-        content: "orders",
-    },
-    {
-        route: "/",
-        content: "service",
-    },
-    {
-        route: "/",
-        content: "Terms and conditions",
+        route: "/contact-us",
+        content: "contact us",
     },
 ]
 

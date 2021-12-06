@@ -89,10 +89,10 @@ figure, .my__card, .modal-content {
 }
 
 .modal-backdrop {
-    z-index: 99999;
+    z-index: 9997;
 }
 .modal {
-    z-index: 99999;
+    z-index: 9997;
     .modal-content {
         overflow: hidden;
         border: none;
@@ -101,6 +101,32 @@ figure, .my__card, .modal-content {
     .modal-body {
         overflow: auto;
         @include scrollbar
+    }
+}
+
+.notifications-wrapper {
+    display: none;
+    @include sm {
+        display: block;
+    }
+    .notification-dismiss {
+        background: none !important;
+        right: 15px !important;
+        top: 15px !important;
+        color: rgba( var(--c-black) , 1) !important;
+        font-weight: 400 !important;
+
+    }
+    .notification-title {
+        margin-bottom: 25px !important;
+        padding: 15px 10px !important;
+        text-transform: capitalize;
+        border-bottom: 1px solid rgba(var(--c-neutral-100) , $alpha) !important;
+        color: rgba( var(--c-black) , $alpha) !important;
+        font-weight: 600 !important;
+    }
+    .notification-message{
+        padding: 0 10px 15px !important;
     }
 }
 

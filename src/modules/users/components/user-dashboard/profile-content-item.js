@@ -48,7 +48,7 @@ function ProfileContentItem () {
                 {/*========== item__content ==========*/}
                 {/*========== item__footer ==========*/}
                 <div className="item__footer">
-                    <div className="d-flex">
+                    <div className="d-flex flex-wrap">
                         <div role="button" className="actions">
                             <HeartIcon className="icon" />
                             <span className='font--size--small'>15 Likes</span>
@@ -61,7 +61,7 @@ function ProfileContentItem () {
                             <img src={photo5} alt="user-like" />
                         </div>
                     </div>
-                    <div className="d-flex">
+                    <div className="d-flex flex-wrap">
                         <div role="button" className="actions">
                             <CommentIcon className="icon" />
                             <span className='font--size--small'>11 Comment</span>

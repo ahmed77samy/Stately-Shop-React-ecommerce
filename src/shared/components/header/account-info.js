@@ -32,8 +32,8 @@ function AccountInfo () {
                 </div>
             </Dropdown.Header>
             <div className="items d-flex flex-column">
-                <Dropdown.Item as={Link} to="/action-1"><AccountIcon className="icon mr-2" /> view profile</Dropdown.Item>
-                <Dropdown.Item as={Link} to="/action-2"><SettingIcon className="icon mr-2" /> account setting</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/user"><AccountIcon className="icon mr-2" /> view profile</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/user/setting"><SettingIcon className="icon mr-2" /> account setting</Dropdown.Item>
             </div>
             <div className="items d-flex flex-column">
                 <Dropdown.Item as={Link} to="/action-1" onClick={handleClick}><LogoutIcon className="icon mr-2" /> log out</Dropdown.Item>

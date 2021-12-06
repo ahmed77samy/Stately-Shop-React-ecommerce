@@ -13,9 +13,10 @@ import NotFound from "../components/not-found";
 export default function publicRoutes (route) {
     route("/demo1" , Demo);
     route("/about-us" , AboutUs);
-    route("/article-grid" , ArticleGrid);
-    route("/article-list" , ArticleList);
-    route("/article-single" , ArticleSingle);
+    route("/article" , ArticleGrid);
+    route("/article/grid" , ArticleGrid);
+    route("/article/list" , ArticleList);
+    route("/article/single" , ArticleSingle);
     route("/contact-us" , ContactUs);
-    route("/404" , NotFound);
+    route("/pages/404" , NotFound);
 }

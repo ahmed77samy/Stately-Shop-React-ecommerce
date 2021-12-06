@@ -4,7 +4,8 @@ section.product__featured {
     .sec__content {
         /*========== featured__header ==========*/
         .featured__header {
-            padding: 0 5px 20px;
+            padding: 10px 5px 15px;
+            border-bottom: 1px solid rgba(var(--c-neutral-100), $alpha);
             h3 {
                 font-weight: 600;
             }
@@ -12,9 +13,6 @@ section.product__featured {
         /*========== featured__header ==========*/
         /*========== product__featured__layout ==========*/
         .my__card {
-            &:hover {
-                box-shadow: var(--shadow-m);
-            }
             .product__featured__layout {
                 display: flex;
                 flex-direction: column;

@@ -30,7 +30,7 @@ class Users {
     /**
      * LoginSchema is contain on schema belongs to register
      */
-    registerSchema = {
+    RegisterSchema = {
         Fname: this.validation.Fname,
         Lname: this.validation.Lname,
         email: this.validation.email,

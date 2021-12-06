@@ -61,7 +61,7 @@ function FooterLinks() {
                 <Col xs={12} sm={6} lg={3}>
                     <FooterItem title="personal">
                         <ul className="list-unstyled m-0">
-                            {personalList}
+                            {informationList}
                         </ul>
                     </FooterItem>
                 </Col>

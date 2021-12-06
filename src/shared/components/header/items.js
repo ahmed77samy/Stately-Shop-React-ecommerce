@@ -2,24 +2,6 @@ const HeaderItems = [
     {
         route: "/demo1",
         content: "home",
-        items: [
-            {
-                route: "/demo1",
-                content: "home 01"
-            },
-            {
-                route: "/home-demo-2",
-                content: "home 02"
-            },
-            {
-                route: "/home-demo-3",
-                content: "home 03"
-            },
-            {
-                route: "/home-demo-4",
-                content: "home 04"
-            },
-        ]
     },
     {
         route: "/about-us",
@@ -31,7 +13,7 @@ const HeaderItems = [
         items: [
             {
                 route: "/shop/banner-sidebar",
-                content: "banner with sidebar"
+                content: "products"
             },
             {
                 route: "/shop/collections",
@@ -44,38 +26,20 @@ const HeaderItems = [
         ]
     },
     {
-        route: "/article-grid",
+        route: "/article",
         content: "blog",
         items: [
             {
-                route: "/article-grid",
+                route: "/article/grid",
                 content: "blog grid"
             },
             {
-                route: "/article-list",
+                route: "/article/list",
                 content: "blog list"
             },
             {
-                route: "/article-single",
+                route: "/article/single",
                 content: "blog single"
-            }
-        ]
-    },
-    {
-        route: "/shop",
-        content: "pages",
-        items: [
-            {
-                route: "/shop/product-single/1",
-                content: "faq's"
-            },
-            {
-                route: "/shop/product-single/1",
-                content: "terms"
-            },
-            {
-                route: "/404",
-                content: "404"
             }
         ]
     },
@@ -85,17 +49,41 @@ const HeaderItems = [
         items: [
             {
                 route: "/user/account",
-                content: "my account"
+                content: "login & register"
             },
             {
                 route: "/user",
-                content: "user"
-            }
+                content: "profile"
+            },
+            {
+                route: "/user/cart",
+                content: "cart"
+            },
+            {
+                route: "/user/favourites",
+                content: "wishlist"
+            },
+            {
+                route: "/user/setting",
+                content: "setting"
+            },
+            {
+                route: "/user/reviews",
+                content: "reviews"
+            },
+            {
+                route: "/user/orders",
+                content: "orders"
+            },
         ]
     },
     {
         route: "/contact-us",
         content: "contact us"
+    },
+    {
+        route: "/pages/404",
+        content: "404"
     },
 ]
 
